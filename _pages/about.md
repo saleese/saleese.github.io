@@ -14,7 +14,7 @@ profile:
     <p>South Gyeongsang Province, Korea, 52828</p>
     <p>Phone: (82) 055-772-1377</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -38,6 +38,48 @@ I am a Professor at Gyeongsang National University, where I direct the **Softwar
 - Adjunct Professor, Department of Management of Technology (Graduate)
 - Adjunct Professor, Department of Smart Manufacturing ICT (Undergraduate, USG University)
 
+<style>
+  /* Keep the portrait near its native 140x180 so it is not upscaled and blurry,
+     which also keeps the right-hand profile column short. */
+  @media (min-width: 769px) {
+    .profile img {
+      max-width: 190px;
+    }
+  }
+
+  /* Research-interests block: diagram floated left, text wrapping to its right,
+     mirroring the layout of the original site. Stacks on narrow screens. */
+  .ri-block {
+    /* start below the floated profile photo, as the original site does */
+    clear: right;
+  }
+  .ri-block::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .ri-figure {
+    float: left;
+    width: 36%;
+    max-width: 320px;
+    margin: 0.25rem 1.75rem 0.75rem 0;
+  }
+  @media (max-width: 768px) {
+    .ri-figure {
+      float: none;
+      width: 100%;
+      max-width: 320px;
+      margin: 0 auto 1.25rem;
+    }
+  }
+</style>
+
+<div class="ri-block" markdown="1">
+
+<div class="ri-figure">
+  {% include figure.liquid loading="eager" path="assets/img/research_interests.png" class="img-fluid rounded" alt="Research interests: Software Engineering, Artificial Intelligence, and Drone Systems" %}
+</div>
+
 ## Research Interests
 
 My research interests are in **Software Engineering**, **Artificial Intelligence**, and **Drone Systems**.
@@ -46,11 +88,9 @@ My research interests are in **Software Engineering**, **Artificial Intelligence
 - **Artificial Intelligence.** I am applying AI techniques such as LLMs, summarization, and classification techniques. I am also applying reinforcement learning techniques. I am interested in the trustworthiness of AI outcomes.
 - **Drone Systems.** I am interested in autonomous drone flights. In this area, I am working on safety analysis techniques such as SACs, STPA, FTA, FMEA, etc.
 
-<div class="my-4">
-  {% include figure.liquid loading="eager" path="assets/img/research_interests.png" class="img-fluid rounded" alt="Research interests: Software Engineering, Artificial Intelligence, and Drone Systems" %}
-</div>
-
 Overall, I am interested in **intelligent software engineering**. I am also interested in improving the productivity of software developers. However, the problem is entangled with the quality of software products. I want to develop the tools and data to improve the status quo. For that, I consider a contextual overview of a software system, using keywords: _task relevance_, _entry points_, and _design evolution_. For a practical application, I am working on drone systems.
+
+</div>
 
 ## Tools Developed
 

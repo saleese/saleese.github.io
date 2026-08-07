@@ -5,7 +5,7 @@ permalink: /
 subtitle: Professor, <a href="https://www.gnu.ac.kr/">Gyeongsang National University</a> · Software Evolution and Architecture Lab
 
 profile:
-  align: right
+  align: left
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
@@ -47,11 +47,16 @@ I am a Professor at Gyeongsang National University, where I direct the **Softwar
     }
   }
 
+  /* The theme sets the address block in a monospace face; use the body font. */
+  .profile .more-info {
+    font-family: inherit;
+  }
+
   /* Research-interests block: diagram floated left, text wrapping to its right,
      mirroring the layout of the original site. Stacks on narrow screens. */
   .ri-block {
     /* start below the floated profile photo, as the original site does */
-    clear: right;
+    clear: both;
   }
   .ri-block::after {
     content: "";

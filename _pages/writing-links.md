@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /writing-links/
-title: writing links
+title: writing
 description: Resources for writing and reading research papers.
 nav: true
 nav_order: 8

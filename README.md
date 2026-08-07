@@ -1,3 +1,5 @@
+[![build](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/alshedivat/al-folio/actions/workflows/deploy.yml)
+
 # al-folio
 
 <div align="center">

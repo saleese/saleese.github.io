@@ -236,8 +236,10 @@ exclude:
   - purgecss.config.js
   - README.md
   - readme_preview/
+  - requirements.txt
   - gems/
   - migrations/
+  - test/
   - vendor
 keep_files:
   - CNAME

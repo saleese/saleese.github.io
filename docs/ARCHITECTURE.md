@@ -26,7 +26,7 @@ This is the **authoritative** description of how the `al-folio` v1 starter and i
 - starter wiring (`Gemfile`, `_config.yml`, `_data/featured_plugins.yml`),
 - example content (`_pages`, `_posts`, `_projects`, `_news`, `_teachings`, `_books`, `_bibliography`),
 - documentation (`docs/`),
-- cross-gem integration tests (`test/integration_*.sh`) and visual parity tests (`test/visual/`).
+- cross-gem integration tests (`test/integration_*.sh`).
 
 **All runtime — layouts, includes, Sass, Liquid tags, filters, and feature JS — lives in versioned gems** published independently on RubyGems and developed under the [`al-org-dev`](https://github.com/al-org-dev) organization.
 

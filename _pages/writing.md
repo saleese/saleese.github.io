@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /writing-links/
+permalink: /writing/
 title: writing
 description: Resources for writing and reading research papers.
 nav: true

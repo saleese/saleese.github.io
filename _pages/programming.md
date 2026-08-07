@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /programming-links/
+permalink: /programming/
 title: programming
 description: Tools, courses, and interview resources for programming.
 nav: true

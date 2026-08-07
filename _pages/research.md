@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /research-links/
+permalink: /research/
 title: research
 description: Reading, venues, people, and groups in software engineering research.
 nav: true

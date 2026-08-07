@@ -282,7 +282,7 @@ CI runs the following on every pull request:
 - [Prettier](https://prettier.io/) — formatting, including Liquid templates
 - [lychee](https://lychee.cli.rs/) — broken links
 - `npm run lint:style-contract` — enforces the thin-starter boundary described in [AGENTS.md](AGENTS.md)
-- the six `test/integration_*.sh` scripts, and Playwright visual-regression checks
+- the four `test/integration_*.sh` scripts
 
 [Axe](https://github.com/dequelabs/axe-core) accessibility checks are run manually, because the fixes are not always straightforward for contributors without web development experience.
 

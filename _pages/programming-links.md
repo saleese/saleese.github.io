@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /programming-links/
-title: programming links
+title: programming
 description: Tools, courses, and interview resources for programming.
 nav: true
 nav_order: 7

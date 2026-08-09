@@ -54,3 +54,7 @@ code\.google\.com/p/promisedata/
 # every page (social icons plus the search index), so it is the first host a run
 # annoys. The profile itself is stable; verify it by hand if it ever matters.
 dblp\.org/
+
+# Blocks non-browser clients outright (403 from CI). Same shape as dblp: it is a
+# profile link the theme repeats on every page, so it cannot be checked here.
+scholar\.google\.com/

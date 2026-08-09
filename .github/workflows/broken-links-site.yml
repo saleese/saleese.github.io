@@ -51,4 +51,11 @@ jobs:
           # A browser user-agent avoids the blanket blocks some academic hosts
           # apply to default clients. URLs that stay unreachable to automated
           # clients are listed in .lycheeignore.
-          args: --root-dir "$GITHUB_WORKSPACE/_site" --user-agent 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36' --max-retries 5 --retry-wait-time 5 --no-progress '_site/**/*.html'
+          # lychee defaults to 128 concurrent requests, which reads as an attack
+          # to smaller hosts: the first green run still had dblp.org answering 503
+          # and blogspot 429 purely from request volume. 8 keeps the run polite.
+          # 429 is accepted because it means rate-limited, never "gone", and 202
+          # because online.stanford.edu answers with it. Note the whole list has
+          # to be spelled out: once --accept is given, lychee no longer implies
+          # 200, so omitting a code here turns a working link red.
+          args: --root-dir "$GITHUB_WORKSPACE/_site" --user-agent 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36' --max-concurrency 8 --accept 200,202,204,206,429 --max-retries 5 --retry-wait-time 5 --no-progress '_site/**/*.html'

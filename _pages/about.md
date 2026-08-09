@@ -30,13 +30,13 @@ latest_posts:
 
 **Seonah Lee, Ph.D. (李宣我)**
 
-I am a Professor at Gyeongsang National University, where I direct the **Software Evolution and Architecture Lab**.
+I am a Professor at Gyeongsang National University, where I direct the **[Software Evolution and Architecture Lab](http://selab.gnu.ac.kr/)**.
 
-- Department of Software Engineering (Undergraduate)
+- [Department of Software Engineering](https://www.gnu.ac.kr/soft/main.do) (Undergraduate)
 - Department of Aerospace and Software Engineering (Undergraduate)
-- Head, BK21 Phase 4 — AI Convergence Research & Education Center for Industrial Intelligence in Gyeongsang Province
-- Adjunct Professor, Department of Management of Technology (Graduate)
-- Adjunct Professor, Department of Smart Manufacturing ICT (Undergraduate, USG University)
+- Head, BK21 Phase 4 — [AI Convergence Research & Education Center for Industrial Intelligence in Gyeongsang Province](https://abc.gnu.ac.kr/)
+- Adjunct Professor, [Department of Management of Technology](https://mot.gnu.ac.kr/) (Graduate)
+- Adjunct Professor, [Department of Smart Manufacturing ICT](https://usg.ac.kr/) (Undergraduate, USG University)
 
 <style>
   /* Keep the portrait near its native 140x180 so it is not upscaled and blurry,
@@ -99,11 +99,11 @@ Overall, I am interested in **intelligent software engineering**. I am also inte
 
 ## Tools Developed
 
-- **NavClus** — <a href="http://github.com/saleese/navclus">github.com/saleese/navclus</a>
+- **NavClus** — <a href="http://github.com/saleese/navclus">github.com/saleese/navclus</a> (<a href="https://www.youtube.com/watch?v=rbrc5ERyWjQ">demo</a>)
 - **NavMine** — <a href="http://www.navmine.com">navmine.com</a> (disabled for a while)
 - **MI** — <a href="https://bitbucket.org/saleese/mi-ve">bitbucket.org/saleese/mi-ve</a>
 
 ## Histories
 
-- Dr. Seonah Lee has been appointed to the assistant professor of Gyeongsang University, Mar. 21, 2016
-- Little Red Team, Mar. 5, 2005
+- <a href="https://cs.kaist.ac.kr/board/view?bbs_id=news&amp;bbs_sn=6998&amp;menu=83">Dr. Seonah Lee has been appointed to the assistant professor of Gyeongsang University</a>, Mar. 21, 2016
+- <a href="http://www.contrib.andrew.cmu.edu/org/littleredteam/">Little Red Team</a>, Mar. 5, 2005

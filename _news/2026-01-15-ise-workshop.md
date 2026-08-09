@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-We are organizing the ISE workshop, associated with ICST 2026. Please, check it out!
+We are organizing [the ISE workshop](https://conf.researchr.org/home/ise-2026), associated with ICST 2026. Please, check it out!

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-We won the drone best award!
+We won [the drone best award](https://www.mdpi.com/about/announcements/13147)!

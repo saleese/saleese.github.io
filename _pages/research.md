@@ -38,9 +38,7 @@ nav_order: 6
 
 - [Chris Parnin](https://chrisparnin.me/)
 - [Walid Maalej](https://maalejw.github.io/) ([blog](http://walidmaalejsblog.blogspot.kr/2011/07/dr-walid-maalej.html))
-- [Sung Kim](https://www.cse.ust.hk/~hunkim/)
 - [Thomas Zimmermann](https://thomas-zimmermann.com/)
-- [Romain Robbes](http://users.dcc.uchile.cl/~rrobbes/index.html)
 - [Christian Bird](http://www.cabird.com/)
 - [Michele Lanza](http://www.inf.usi.ch/faculty/lanza/publications.html)
 - [Martin Robillard](http://www.cs.mcgill.ca/~martin/papers.html) ([class](http://www.cs.mcgill.ca/~martin/teaching/comp762-winter-2012/#schedule))
@@ -50,9 +48,7 @@ nav_order: 6
 - [Tao Xie](https://taoxiease.github.io/)
 - [Martin Monperrus](http://www.monperrus.net/martin/publications)
 - [Kwangkeun Yi](http://ropas.snu.ac.kr/~kwang/) ([SNEC](http://ropas.snu.ac.kr/snec/))
-- [Lin Tan](https://ece.uwaterloo.ca/~lintan/)
 - [Yuanyuan Zhou](http://cseweb.ucsd.edu/~yyzhou/index.html)
-- [YoungSeok Yoon](http://www.cs.cmu.edu/~yyoon1/)
 
 ## Groups
 

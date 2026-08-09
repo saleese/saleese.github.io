@@ -31,13 +31,6 @@ https://www.reddit.com/
 # Written without a scheme so the pattern matches whichever form the page links to.
 www\.mdpi\.com/about/announcements/
 niklaselmqvist\.medium\.com/
-ece\.uwaterloo\.ca/~lintan/
-www\.cse\.ust\.hk/~hunkim/
-users\.dcc\.uchile\.cl/~rrobbes/
-
-# Live, but serves an expired TLS certificate (cs.cmu.edu/~yyoon1 redirects here).
-research\.yyoon\.net/
-www\.cs\.cmu\.edu/~yyoon1/
 
 # Offline on purpose — the page itself labels it "(disabled for a while)".
 www\.navmine\.com/

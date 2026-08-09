@@ -42,11 +42,14 @@ latest_posts:
 </p>
 
 <style>
-  /* Keep the portrait near its native 140x180 so it is not upscaled and blurry,
-     which also keeps the right-hand profile column short. */
+  /* 127px is two thirds of the 190px this used to render at. It also lands under
+     the source image's 140px width, so the portrait is now downscaled rather
+     than stretched — the previous size was interpolating a 140x180 original.
+     Only applies from 769px up; below that the theme gives the portrait the full
+     column, which is its intended responsive behaviour. */
   @media (min-width: 769px) {
     .profile img {
-      max-width: 190px;
+      max-width: 127px;
     }
   }
 

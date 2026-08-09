@@ -49,4 +49,51 @@
 
 :root {
   --global-bg-color: #f2f2f2;
+  --navbar-bg-color: #e4e4e6;
+}
+
+/* The gem paints the navbar with --global-bg-color, so the menu bar is
+   invisible against the page. Give it its own token, set per mode: a step
+   darker than the page in light, a step lighter in dark. Each mode keeps its
+   own character rather than sharing one grey. */
+html[data-theme="dark"] {
+  --navbar-bg-color: #2c2c2e;
+}
+
+.navbar {
+  background-color: var(--navbar-bg-color);
+}
+
+.navbar .dropdown-menu {
+  background-color: var(--navbar-bg-color);
+}
+
+/* On every page except the homepage the gem prints the full site name as the
+   navbar brand, and "Seonah Lee" plus nine menu items wraps the bar onto a
+   second row (97px tall instead of 57px). The brand text is assembled in
+   `_includes/header.liquid`, a path this starter must not own, and the only
+   config knobs (`title`, `first_name`/`last_name`) also drive the homepage
+   heading, footer, SEO metadata and citation blocks — so shortening those
+   would change far more than the navbar.
+
+   Instead, collapse the real text and paint a short form in its place. The
+   original weights are kept: bold given name, light family name. The full
+   name stays in the DOM for assistive tech; note that screen readers may also
+   announce the generated text, reading "Seonah Lee S.Lee".
+
+   The clean fix is a dedicated navbar-title option in al_folio_core. */
+.navbar-brand.title {
+  font-size: 0;
+}
+
+.navbar-brand.title::before {
+  content: "S.";
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.navbar-brand.title::after {
+  content: "Lee";
+  font-size: 1.25rem;
+  font-weight: 100;
 }

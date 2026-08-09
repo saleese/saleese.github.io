@@ -44,17 +44,20 @@
     display: table;
     clear: both;
   }
+  /* Sized to match the original site, which renders this diagram at 409px wide.
+     Its labels are small enough that the earlier 320px cap made them unreadable.
+     The source image is 861x829, so 410px is still a downscale, not an upscale. */
   .ri-figure {
     float: left;
-    width: 36%;
-    max-width: 320px;
+    width: 46%;
+    max-width: 410px;
     margin: 0.25rem 1.75rem 0.75rem 0;
   }
   @media (max-width: 768px) {
     .ri-figure {
       float: none;
       width: 100%;
-      max-width: 320px;
+      max-width: 410px;
       margin: 0 auto 1.25rem;
     }
   }

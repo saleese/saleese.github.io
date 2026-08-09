@@ -2,17 +2,16 @@
 layout: about
 title: introduction
 permalink: /
-subtitle: Professor, <a href="https://www.gnu.ac.kr/">Gyeongsang National University</a> · Software Evolution and Architecture Lab
+subtitle: Professor, <a href="https://www.gnu.ac.kr/">Gyeongsang National University</a> · <a href="http://selab.gnu.ac.kr/">Software Evolution and Architecture Lab</a>
 
 profile:
   align: left
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>601-810, Gyeongsang National University</p>
-    <p>Jinjudaero 501, Jinju City</p>
-    <p>South Gyeongsang Province, Korea, 52828</p>
-    <p>Phone: (82) 055-772-1377</p>
+    <p><a href="https://scholar.google.com/citations?user=4bEToL8AAAAJ">Google Scholar</a></p>
+    <p><a href="https://dblp.org/pid/l/SeonahLee.html">DBLP</a></p>
+    <p><a href="https://orcid.org/0000-0002-2004-2924">ORCID</a></p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -30,12 +29,17 @@ latest_posts:
 
 **Seonah Lee, Ph.D. (李宣我)**
 
-I am a Professor at Gyeongsang National University, where I direct the **[Software Evolution and Architecture Lab](http://selab.gnu.ac.kr/)**.
-
 - [Department of Software Engineering](https://www.gnu.ac.kr/soft/main.do) (Undergraduate)
 - Head, BK21 Phase 4 — [AI Convergence Research & Education Center for Industrial Intelligence in Gyeongsang Province](https://abc.gnu.ac.kr/)
 - Adjunct Professor, [Department of Management of Technology](https://mot.gnu.ac.kr/) (Graduate)
 - Adjunct Professor, [Department of Smart Manufacturing ICT](https://usg.ac.kr/) (Undergraduate, USG University)
+
+<p class="contact-block">
+  601-810, Gyeongsang National University<br />
+  Jinjudaero 501, Jinju City<br />
+  South Gyeongsang Province, Korea, 52828<br />
+  Phone: (82) 055-772-1377
+</p>
 
 <style>
   /* Keep the portrait near its native 140x180 so it is not upscaled and blurry,
@@ -46,9 +50,24 @@ I am a Professor at Gyeongsang National University, where I direct the **[Softwa
     }
   }
 
-  /* The theme sets the address block in a monospace face; use the body font. */
+  /* The theme sets the block under the portrait in a monospace face; use the body font. */
   .profile .more-info {
     font-family: inherit;
+  }
+
+  /* The theme lays those entries out as inline-block, which runs the profile
+     links together on one line. One per line instead. */
+  .profile .more-info p {
+    display: block;
+    margin-bottom: 0.15rem;
+  }
+
+  /* Contact details sit beside the floated portrait, under the affiliation list.
+     Without its own formatting context the text wraps around the portrait and
+     the last line drops to the left margin below it. */
+  .contact-block {
+    overflow: hidden;
+    margin-top: 1rem;
   }
 
   /* Research-interests block: diagram floated left, text wrapping to its right,

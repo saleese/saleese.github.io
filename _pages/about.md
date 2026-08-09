@@ -42,14 +42,13 @@ latest_posts:
 </p>
 
 <style>
-  /* 127px is two thirds of the 190px this used to render at. It also lands under
-     the source image's 140px width, so the portrait is now downscaled rather
-     than stretched — the previous size was interpolating a 140x180 original.
-     Only applies from 769px up; below that the theme gives the portrait the full
-     column, which is its intended responsive behaviour. */
+  /* prof_pic.jpg is 140x180, so capping at 140px shows it pixel-for-pixel — no
+     scaling in either direction. The theme otherwise stretches it to the full
+     profile column. Only applies from 769px up; below that the theme gives the
+     portrait the full column, which is its intended responsive behaviour. */
   @media (min-width: 769px) {
     .profile img {
-      max-width: 127px;
+      max-width: 140px;
     }
   }
 

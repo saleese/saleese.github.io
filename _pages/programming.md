@@ -9,10 +9,10 @@ nav_order: 7
 
 ## Program Analysis Tools
 
-- [Soot](http://www.sable.mcgill.ca/soot/)
+- [Soot](https://soot-oss.github.io/soot/)
 - [Polyglot](https://github.com/polyglot-compiler/polyglot)
 - [ANTLR](http://www.antlr.org/)
-- [PPA](https://bitbucket.org/barthe/ppa/wiki/Home)
+- PPA
 
 ## Natural Language Processing Tools
 
@@ -61,5 +61,4 @@ nav_order: 7
 ## Others
 
 - [KLDP](http://kldp.org/)
-- [Coding Horror](http://www.codinghorror.com/blog/)
-- [MSE Studio](http://dogbert.mse.cs.cmu.edu/)
+- [Coding Horror](https://blog.codinghorror.com/)

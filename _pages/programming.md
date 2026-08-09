@@ -32,7 +32,6 @@ nav_order: 7
 
 - [Programming Sites](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxzYWxlZXNlfGd4OjU2ZjY2NWQ3ZGViM2E3NWQ)
 - [Codecademy.com](http://www.codecademy.com/learn)
-- [Codeschool.com](https://www.codeschool.com/)
 - [Code.org](http://code.org/)
 - Ruby on Rails
   - [Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html)

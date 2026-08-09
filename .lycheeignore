@@ -1,3 +1,14 @@
+# Patterns here are skipped by lychee. Two groups:
+#
+#  1. Source files whose links cannot be resolved statically (Liquid tags,
+#     template placeholders, release-note compare ranges). These come from
+#     upstream al-folio and apply to the source scan in broken-links.yml.
+#
+#  2. URLs that are live in a browser but cannot be verified by an automated
+#     client. Each one below was opened manually before being listed; a link
+#     that turned out to be genuinely dead was removed from the site instead.
+#     Re-check these if the site content changes.
+
 .github/instructions/bibtex-bibliography.instructions.md
 .github/instructions/liquid-templates.instructions.md
 .github/instructions/markdown-content.instructions.md
@@ -8,9 +19,32 @@ _pages/blog.md
 _posts/2018-12-22-distill.md
 _posts/2023-04-24-videos.md
 AGENTS.md
-https://dash.cloudflare.com/
-https://www.linkedin.com/
-https://www.reddit.com/
 README.md
 docs/SEO.md
 docs/SHOWCASE.md
+
+https://dash.cloudflare.com/
+https://www.linkedin.com/
+https://www.reddit.com/
+
+# Answer 403 to non-browser clients (WAF / anti-bot), verified reachable manually.
+# Written without a scheme so the pattern matches whichever form the page links to.
+www\.mdpi\.com/about/announcements/
+niklaselmqvist\.medium\.com/
+ece\.uwaterloo\.ca/~lintan/
+www\.cse\.ust\.hk/~hunkim/
+users\.dcc\.uchile\.cl/~rrobbes/
+
+# Live, but serves an expired TLS certificate (cs.cmu.edu/~yyoon1 redirects here).
+research\.yyoon\.net/
+www\.cs\.cmu\.edu/~yyoon1/
+
+# Offline on purpose — the page itself labels it "(disabled for a while)".
+www\.navmine\.com/
+
+# Reachable, but answer 5xx often enough to fail a run at random even with
+# retries (observed alternating 200/503 and 200/500 across probes). Listed so
+# the checker stays trustworthy; the trade is that a real outage of these two
+# would go unreported.
+www\.redmine\.org/projects/redmine
+code\.google\.com/p/promisedata/

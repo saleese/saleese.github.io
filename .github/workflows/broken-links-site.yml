@@ -43,5 +43,12 @@ jobs:
         uses: lycheeverse/lychee-action@v2.0.2
         with:
           fail: true
-          # only check local links
-          args: --offline --remap '_site(/?.*)/assets/(.*) _site/assets/$2' --verbose --no-progress '_site/**/*.html'
+          # Checks the built site, internal and external. This used to pass
+          # --offline, which skips every network request, so the run reported
+          # "0 errors" while checking only a handful of local links.
+          # --root-dir resolves the root-relative hrefs the theme emits; without
+          # it every /assets/... and /page/ link is reported unresolvable.
+          # A browser user-agent avoids the blanket blocks some academic hosts
+          # apply to default clients. URLs that stay unreachable to automated
+          # clients are listed in .lycheeignore.
+          args: --root-dir "$GITHUB_WORKSPACE/_site" --user-agent 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36' --max-retries 5 --retry-wait-time 5 --no-progress '_site/**/*.html'

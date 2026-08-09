@@ -58,4 +58,7 @@ jobs:
           # because online.stanford.edu answers with it. Note the whole list has
           # to be spelled out: once --accept is given, lychee no longer implies
           # 200, so omitting a code here turns a working link red.
-          args: --root-dir "$GITHUB_WORKSPACE/_site" --user-agent 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36' --max-concurrency 8 --accept 200,202,204,206,429 --max-retries 5 --retry-wait-time 5 --no-progress '_site/**/*.html'
+          # Timeouts are counted apart from errors in the summary table but still
+          # fail the run, so a slow host shows up as "0 errors" and a red check.
+          # 30s gives hosts that are sluggish from GitHub's network some room.
+          args: --root-dir "$GITHUB_WORKSPACE/_site" --user-agent 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36' --max-concurrency 8 --accept 200,202,204,206,429 --timeout 30 --max-retries 5 --retry-wait-time 5 --no-progress '_site/**/*.html'

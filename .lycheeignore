@@ -48,3 +48,9 @@ www\.navmine\.com/
 # would go unreported.
 www\.redmine\.org/projects/redmine
 code\.google\.com/p/promisedata/
+
+# Throttles repeat callers hard: answered 200 early in a session, then 503 and
+# connection failures once it had seen a few requests. It is also linked from
+# every page (social icons plus the search index), so it is the first host a run
+# annoys. The profile itself is stable; verify it by hand if it ever matters.
+dblp\.org/

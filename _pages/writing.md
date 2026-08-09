@@ -9,7 +9,7 @@ nav_order: 8
 
 ## Writing a Paper
 
-- [Research is communication](http://research.microsoft.com/en-us/um/people/simonpj/papers/giving-a-talk/writing-a-paper-slides.pdf) (PDF) ([video](https://www.youtube.com/watch?v=g3dkRsTqdDA))
+- [Research is communication](http://research.microsoft.com/en-us/um/people/simonpj/papers/giving-a-talk/writing-a-paper-slides.pdf) (PDF)
 - [A thesis proposal is a contract](http://matt.might.net/articles/advice-for-phd-thesis-proposals/)
 - [How to write a thesis proposal](http://www.ldeo.columbia.edu/~martins/sen_res/how_to_thesis_proposal.html)
 - [Tips for Writing Technical Papers](http://infolab.stanford.edu/~widom/paper-writing.html)
@@ -25,7 +25,6 @@ nav_order: 8
 - How to Write Related Work
   - [How to Write Related Work](http://guidetogradschoolsurvival.wordpress.com/2011/04/08/how-to-write-related-work/)
   - [How to Write Related Work](https://web.archive.org/web/20120417102702/http://www.cc.gatech.edu/~traynor/f08/slides/lecture11-relwork.pdf) (PDF, archived)
-  - [How to Organize Related Work](http://dilab.eecs.utk.edu/links/related_work.pdf) (PDF)
   - [How to Write a Literature Review](https://writingcenter.unc.edu/tips-and-tools/literature-reviews/)
 - How to Propose an Approach
   - [Pseudocode Standard](http://users.csc.calpoly.edu/~jdalbey/SWE/pdl_std.html)

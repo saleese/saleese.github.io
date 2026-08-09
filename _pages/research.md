@@ -65,7 +65,6 @@ nav_order: 6
 ## Online Lectures (Specific)
 
 - [Empirical Research Methods in Software Engineering](http://www.cs.toronto.edu/~sme/CSC2130/)
-- [Program Comprehension Related...](http://www.cse.dmu.ac.uk/~mward/msc-se-2012/)
 - [Psychology Classics](http://psychclassics.yorku.ca/Ebbinghaus/index.htm)
 - [FireBug](https://getfirebug.com/wiki/index.php/Firebug_Research)
 

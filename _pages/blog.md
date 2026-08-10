@@ -128,6 +128,13 @@ pagination:
           <div class="col-sm-9">
 {% endif %}
         <h3>
+        <!-- Research area, from the post's `area` front matter (se / ai / aero).
+             Same badge as the course group headings, so a reader recognises the
+             three areas wherever they appear. Posts without one just render the
+             title. -->
+        {% if post.area %}
+          <span class="area-tag area-{{ post.area }}">{{ post.area | upcase }}</span>
+        {% endif %}
         {% if post.redirect == blank %}
           <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
         {% elsif post.redirect contains '://' %}

@@ -112,20 +112,18 @@ html[data-theme="dark"] {
    match the original site.
 -------------------------------------------------------------------------------- */
 
-/* jekyll-scholar splits each group into one <ol> per year, separated by an
-   h2.bibliography carrying the year. At the gem's size those 58 separators came
-   to ~6,300px — a third of the page. Kept, because they are useful for scanning,
-   but at roughly a quarter of the height. */
+/* jekyll-scholar splits each group into one <ol> per year with an h2.bibliography
+   carrying the year between them. Those separators are hidden: each entry already
+   ends in its own year, and at the gem's size the 58 of them took ~6,300px, a
+   third of the page. The split still leaves 59 lists behind, so their margins are
+   flattened too or the gaps remain where the headings were. */
 .publications {
   h2.bibliography {
-    font-size: 0.95rem;
-    margin-top: 0.7rem;
-    margin-bottom: 0.35rem;
-    padding-top: 0.35rem;
+    display: none;
   }
 
   ol.bibliography {
-    margin-bottom: 0.35rem;
+    margin-bottom: 0;
   }
 }
 

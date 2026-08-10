@@ -170,32 +170,52 @@ html[data-theme="dark"] {
     display: none;
   }
 
-  /* The gutter holds the research-area label when one is set. As a grid column
-     it is a block above the entry and a full 2/12 wide; floated instead, it
-     rides on the title's line at the right margin. Floats need the row out of
-     flex layout to take effect. */
+  /* Research-area labels. A paper can sit in more than one area, and `abbr` —
+     the only field the gem renders as a badge — holds a single value. The labels
+     are therefore emitted as markup through `note`, which bib.liquid prints
+     unescaped in a div of its own.
+
+     `additional_info` was the other candidate and is the wrong one: it is
+     concatenated into the venue string, so the tags land between the journal
+     name and the year, and markdownify's trailing newline shows up as a stray
+     space before the comma.
+
+     One float on the wrapper, not on each tag — floating them individually
+     stacks them right to left and reverses the order. Fixed dark ink rather than
+     a theme token: all three fills are pale and --global-card-bg-color is white
+     in light mode. */
   .row {
     display: block;
   }
 
-  .col.col-sm-2.abbr {
+  .pub-tags {
     float: right;
-    width: auto;
-    max-width: none;
-    padding: 0;
-    margin: 0 0 0 0.6rem;
+    margin-left: 0.4rem;
+  }
 
-    abbr.badge {
-      width: auto !important;
-      padding: 0.12rem 0.5rem;
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 0.05em;
-      /* The theme paints badge text with --global-card-bg-color, which is white
-         in light mode and would vanish on these pale fills. Fixed dark ink keeps
-         the label legible on all three, in either theme. */
-      color: #2b2b2b !important;
-    }
+  .pub-tag {
+    display: inline-block;
+    margin-left: 0.3rem;
+    padding: 0.12rem 0.5rem;
+    border-radius: 0.6rem;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    font-style: normal;
+    color: #2b2b2b;
+  }
+
+  /* Sampled from the Venn diagram on the introduction page. */
+  .pub-se {
+    background-color: #ffe1e6;
+  }
+
+  .pub-ai {
+    background-color: #cfebfd;
+  }
+
+  .pub-aero {
+    background-color: #9999ff;
   }
 
   .col-sm-8 {

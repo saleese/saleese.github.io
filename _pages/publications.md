@@ -13,6 +13,15 @@ nav_order: 2
 
 {% include bib_search.liquid %}
 
+<!-- Research-area filter. Buttons mirror the labels attached to each entry in
+     papers.bib; the script hides entries that lack the chosen one. -->
+<div class="pub-filter" role="group" aria-label="Filter publications by research area">
+  <button type="button" data-area="all" class="is-active" aria-pressed="true">All</button>
+  <button type="button" data-area="se" aria-pressed="false">SE</button>
+  <button type="button" data-area="ai" aria-pressed="false">AI</button>
+  <button type="button" data-area="aero" aria-pressed="false">AERO</button>
+</div>
+
 <div class="publications">
 
 <h2 class="mt-5">Top-tier Journals</h2>
@@ -36,3 +45,46 @@ nav_order: 2
 {% bibliography --query @*[keywords=domconf] %}
 
 </div>
+
+<script>
+  // Filters the list by research area. Entries carry their areas as .pub-tag
+  // classes, so no separate index is needed.
+  //
+  // Section headings and their year lists are siblings of each other rather than
+  // parents of the entries, so an emptied section has to be hidden by walking
+  // forward from its heading until the next one.
+  (function () {
+    const bar = document.querySelector(".pub-filter");
+    if (!bar) return;
+    const pubs = document.querySelector(".publications");
+
+    function apply(area) {
+      pubs.querySelectorAll("ol.bibliography > li").forEach((li) => {
+        const keep = area === "all" || li.querySelector(".pub-tag.pub-" + area);
+        li.hidden = !keep;
+      });
+      pubs.querySelectorAll("h2.mt-5").forEach((h) => {
+        let empty = true;
+        for (let el = h.nextElementSibling; el && !el.matches("h2.mt-5"); el = el.nextElementSibling) {
+          if (el.matches("ol.bibliography")) {
+            const shown = [...el.children].some((li) => !li.hidden);
+            if (el.tagName === "OL") el.hidden = !shown;
+            if (shown) empty = false;
+          }
+        }
+        h.hidden = empty;
+      });
+    }
+
+    bar.addEventListener("click", (e) => {
+      const btn = e.target.closest("button[data-area]");
+      if (!btn) return;
+      bar.querySelectorAll("button").forEach((b) => {
+        const on = b === btn;
+        b.classList.toggle("is-active", on);
+        b.setAttribute("aria-pressed", String(on));
+      });
+      apply(btn.dataset.area);
+    });
+  })();
+</script>

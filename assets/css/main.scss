@@ -97,3 +97,82 @@ html[data-theme="dark"] {
   font-size: 1.25rem;
   font-weight: 100;
 }
+
+/* -----------------------------------------------------------------------------
+   Publications: compact list
+   -----------------------------------------------------------------------------
+   The bibliography carries no `abbr`, so the gem's two-column year gutter renders
+   empty on all 130 entries while still reserving its width, and each entry stacks
+   title / authors / venue / DOI on separate rows with a 1rem gap. That came to
+   ~163px per paper and a 21,000px page — the previous Google Sites page listed
+   the same papers as one flowing line each, and was far easier to scan.
+
+   Reclaim the empty gutter, tighten the stack, and pull the DOI button onto the
+   venue line. Grouping is untouched: the five headings in publications.md already
+   match the original site.
+-------------------------------------------------------------------------------- */
+
+/* jekyll-scholar splits each group into one <ol> per year, separated by an
+   h2.bibliography carrying the year. At the gem's size those 58 separators came
+   to ~6,300px — a third of the page. Kept, because they are useful for scanning,
+   but at roughly a quarter of the height. */
+.publications {
+  h2.bibliography {
+    font-size: 0.95rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.35rem;
+    padding-top: 0.35rem;
+  }
+
+  ol.bibliography {
+    margin-bottom: 0.35rem;
+  }
+}
+
+.publications ol.bibliography li {
+  margin-bottom: 0.55rem;
+
+  /* Empty year gutter — drop it and let the entry use the full width. */
+  .col.col-sm-2.abbr:empty {
+    display: none;
+  }
+
+  .col-sm-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .title,
+  .author,
+  .periodical {
+    line-height: 1.35;
+  }
+
+  /* Title keeps its own line; authors and venue flow together on the next one,
+     the way the original site ran each paper as a single citation. Three stacked
+     rows per paper became two. */
+  .author,
+  .periodical {
+    display: inline;
+  }
+
+  /* The author block's markup ends in whitespace, so a generated separator
+     renders detached (" ."). The venue is italic and already reads as a distinct
+     run; a margin is enough to part them. */
+  .periodical {
+    margin-left: 0.3rem;
+  }
+
+  /* Sits on the end of the venue line instead of claiming a row of its own. */
+  .links {
+    display: inline;
+    margin-left: 0.4rem;
+
+    a.btn {
+      padding: 0 0.4rem;
+      font-size: 0.7rem;
+      line-height: 1.5;
+      vertical-align: baseline;
+    }
+  }
+}

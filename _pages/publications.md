@@ -84,6 +84,13 @@ nav_order: 2
       // element in front of it would leave the number sitting on the award.
       const award = li.querySelector(".pub-award");
       if (title && award) title.prepend(award);
+
+      // The `html` field is how bib.liquid takes a plain URL, and it labels the
+      // button "HTML". For entries that carry a publisher's landing page instead
+      // of a DOI that reads as a promise of full text the link does not keep.
+      links?.querySelectorAll("a.btn").forEach((a) => {
+        if (a.textContent.trim() === "HTML") a.textContent = "Link";
+      });
     });
 
     // Two things CSS cannot work out for itself, both width-dependent, so they are

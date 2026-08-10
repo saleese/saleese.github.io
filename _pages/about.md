@@ -55,6 +55,13 @@ latest_posts:
     margin-left: -0.26em;
   }
 
+  /* The theme hardcodes this heading as lowercase "news" in its own layout, a
+     file this repo must not own. Capitalising it here matches the other headings
+     on the page — Research Interests, Tools Developed, Histories. */
+  .post article h2:has(> a[href$="/news/"]) {
+    text-transform: capitalize;
+  }
+
   /* prof_pic.jpg is 140x180, so capping at 140px shows it pixel-for-pixel — no
      scaling in either direction. The theme otherwise stretches it to the full
      profile column. Only applies from 769px up; below that the theme gives the

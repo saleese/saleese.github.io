@@ -11,15 +11,19 @@ nav_order: 2
 
 <!-- Bibsearch Feature -->
 
+<!-- Text search and the research-area filter share one row. The filter buttons
+     mirror the labels attached to each entry in papers.bib; the script below
+     hides entries that lack the chosen one. -->
+<div class="pub-toolbar">
+
 {% include bib_search.liquid %}
 
-<!-- Research-area filter. Buttons mirror the labels attached to each entry in
-     papers.bib; the script hides entries that lack the chosen one. -->
-<div class="pub-filter" role="group" aria-label="Filter publications by research area">
-  <button type="button" data-area="all" class="is-active" aria-pressed="true">All</button>
-  <button type="button" data-area="se" aria-pressed="false">SE</button>
-  <button type="button" data-area="ai" aria-pressed="false">AI</button>
-  <button type="button" data-area="aero" aria-pressed="false">AERO</button>
+  <div class="pub-filter" role="group" aria-label="Filter publications by research area">
+    <button type="button" data-area="all" class="is-active" aria-pressed="true">All</button>
+    <button type="button" data-area="se" aria-pressed="false">SE</button>
+    <button type="button" data-area="ai" aria-pressed="false">AI</button>
+    <button type="button" data-area="aero" aria-pressed="false">AERO</button>
+  </div>
 </div>
 
 <div class="publications">

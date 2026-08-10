@@ -266,11 +266,27 @@ html[data-theme="dark"] {
    rather than dropping it, which would leave four identical grey buttons.
 -------------------------------------------------------------------------------- */
 
+/* Search box and filter buttons on one row. The gem's input is a bare
+   <input> with no wrapper, so the row is formed here rather than around it. */
+.pub-toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.8rem;
+  margin: 0.9rem 0 0.2rem;
+
+  .bibsearch-form-input {
+    margin: 0;
+    flex: 0 1 22rem;
+    min-width: 12rem;
+  }
+}
+
 .pub-filter {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
-  margin: 0.9rem 0 0.2rem;
+  margin: 0;
 
   button {
     padding: 0.2rem 0.85rem;

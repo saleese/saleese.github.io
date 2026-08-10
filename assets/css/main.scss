@@ -125,10 +125,38 @@ html[data-theme="dark"] {
   ol.bibliography {
     margin-bottom: 0;
   }
+
+  /* Numbering restarts at each group, as on the original site, so the last number
+     in a section is that section's count. It has to be a counter rather than the
+     list's own markers: the year split means a group is many <ol>s, and native
+     numbering would restart at every one of them. Resetting on the group heading
+     works because a counter's scope covers the element's following siblings, and
+     the lists are siblings of the heading.
+
+     Do not also reset on .publications. That puts the counter in an ancestor
+     scope, which outranks the headings' sibling scope, and the numbering then
+     runs unbroken through all five groups — the second section started at 3. */
+  h2.mt-5 {
+    counter-reset: pub;
+  }
 }
 
 .publications ol.bibliography li {
   margin-bottom: 0.55rem;
+  counter-increment: pub;
+  position: relative;
+  padding-left: 2.2rem;
+
+  &::before {
+    content: counter(pub) ".";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.8rem;
+    text-align: right;
+    color: var(--global-text-color-light);
+    font-variant-numeric: tabular-nums;
+  }
 
   /* Empty year gutter — drop it and let the entry use the full width. */
   .col.col-sm-2.abbr:empty {

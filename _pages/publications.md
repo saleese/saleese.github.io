@@ -76,6 +76,14 @@ nav_order: 2
       const title = li.querySelector(".title");
       const links = li.querySelector(".links");
       if (title && links) title.after(links);
+
+      // Awards read ahead of the title. They ride in `note` with the area labels,
+      // which is the only field bib.liquid prints as raw markup, so they arrive at
+      // the end of the entry and have to be moved. Into the title rather than
+      // before it: the entry number is positioned against the title's box, so an
+      // element in front of it would leave the number sitting on the award.
+      const award = li.querySelector(".pub-award");
+      if (title && award) title.prepend(award);
     });
 
     // Two things CSS cannot work out for itself, both width-dependent, so they are

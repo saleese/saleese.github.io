@@ -50,6 +50,7 @@
 :root {
   --global-bg-color: #f2f2f2;
   --navbar-bg-color: #e4e4e6;
+  --pub-award-color: #96701f;
 }
 
 /* The gem paints the navbar with --global-bg-color, so the menu bar is
@@ -58,6 +59,8 @@
    own character rather than sharing one grey. */
 html[data-theme="dark"] {
   --navbar-bg-color: #2c2c2e;
+  /* The light-mode gold is too dark to read against the dark page. */
+  --pub-award-color: #d9b45f;
 }
 
 .navbar {
@@ -233,6 +236,19 @@ html[data-theme="dark"] {
     letter-spacing: 0.05em;
     font-style: normal;
     color: #2b2b2b;
+  }
+
+  /* Award, moved to the front of the title by the script in publications.md.
+     Text rather than a filled badge: the three area labels already carry fills,
+     and a fourth would compete with them for the same glance. Gold reads as an
+     award without needing one. */
+  .pub-award {
+    margin-right: 0.3rem;
+    color: var(--pub-award-color);
+    font-size: 0.82rem;
+    font-weight: 600;
+    font-style: normal;
+    white-space: nowrap;
   }
 
   /* Sampled from the Venn diagram on the introduction page. */

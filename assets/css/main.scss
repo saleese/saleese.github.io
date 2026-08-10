@@ -423,24 +423,15 @@ html[data-theme="dark"] {
 }
 
 /* -----------------------------------------------------------------------------
-   Courses: grouped by area
+   Area badges
    -----------------------------------------------------------------------------
-   The courses were one flat run, which gave no sense of what is taught in which
-   area. Grouped the way the previous Google Sites page grouped them, with the
-   heading badges reusing the research-area colours so the reader recognises them
-   from the publications list and the introduction diagram.
+   The badge that names a research area, used by the course group headings and by
+   the blog post titles. The publications list has its own `.pub-tag`, kept
+   separate because its markup is embedded in 135 bibliography entries and its
+   class names drive the filter script.
 -------------------------------------------------------------------------------- */
 
-.course-group {
-  margin: 2.2rem 0 1rem;
-  font-size: 1.35rem;
-
-  &:first-of-type {
-    margin-top: 0.5rem;
-  }
-}
-
-.course-tag {
+.area-tag {
   display: inline-block;
   margin-right: 0.5rem;
   padding: 0.12rem 0.55rem;
@@ -454,18 +445,43 @@ html[data-theme="dark"] {
   vertical-align: 0.22em;
 }
 
-.course-se {
+.area-se {
   background-color: $area-se;
 }
 
-.course-ai {
+.area-ai {
   background-color: $area-ai;
 }
 
-.course-aero {
+.area-aero {
   background-color: $area-aero;
 }
 
-.course-cs {
+.area-cs {
   background-color: $area-cs;
+}
+
+/* Courses: the group headings. The courses were one flat run, which gave no
+   sense of what is taught in which area. */
+.course-group {
+  margin: 2.2rem 0 1rem;
+  font-size: 1.35rem;
+
+  &:first-of-type {
+    margin-top: 0.5rem;
+  }
+}
+
+/* Blog: the theme's blog heading is driven by site.blog_name, which is now blank
+   so the page does not repeat the navbar item. The empty <h1> it still emits
+   would otherwise hold a heading's worth of space above the description. */
+.header-bar h1:empty {
+  display: none;
+}
+
+/* The badge sits inside the post-list heading, whose link is the title; without
+   this it inherits the link's colour and underline. */
+.post-list h3 .area-tag {
+  vertical-align: 0.3em;
+  text-decoration: none;
 }

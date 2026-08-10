@@ -58,9 +58,65 @@ nav_order: 2
   // parents of the entries, so an emptied section has to be hidden by walking
   // forward from its heading until the next one.
   (function () {
+    const pubs = document.querySelector(".publications");
+
+    // The DOI button is last in bib.liquid's markup, after the venue. It belongs
+    // at the end of the title, so move the node rather than reorder visually:
+    // CSS order only works in a flex container, and a flex container cannot let
+    // the authors continue on the same line the title ends on — long titles then
+    // cost a third line. With everything in normal inline flow each entry reads
+    // as one running citation and wraps only when it is genuinely full.
+    //
+    // Without JS the entry still renders, just with the DOI in its original spot.
+    const items = [...pubs.querySelectorAll("ol.bibliography > li")];
+    items.forEach((li) => {
+      const title = li.querySelector(".title");
+      const links = li.querySelector(".links");
+      if (title && links) title.after(links);
+    });
+
+    // Two things CSS cannot work out for itself, both width-dependent, so they are
+    // redone on resize:
+    //
+    //  - How wide the first-line gutter has to be. The labels are positioned out
+    //    of flow, and one badge needs far less room than three.
+    //  - Whether the title fits on one line. If it does the authors start their
+    //    own line, which is the shape the original site had; if the title already
+    //    wraps, they continue after it rather than costing a third line.
+    function measure() {
+      items.forEach((li) => {
+        const col = li.querySelector(".col-sm-8");
+        const tags = li.querySelector(".pub-tags");
+        if (col && tags) col.style.setProperty("--pub-tags-width", Math.ceil(tags.getBoundingClientRect().width) + "px");
+      });
+      // Second pass: the gutter above changes where the title wraps.
+      items.forEach((li) => {
+        const title = li.querySelector(".title");
+        if (!title) return;
+        // An inline box reports one client rect per line fragment. The DOI has to
+        // be on that line too, or forcing the break would leave it stranded on a
+        // line of its own between the title and the authors.
+        const first = title.getClientRects()[0];
+        const tail = (li.querySelector(".links") || title).getBoundingClientRect();
+        li.classList.toggle("one-line-title", title.getClientRects().length <= 1 && first && tail.top < first.bottom);
+      });
+    }
+
+    measure();
+    // This script runs at parse time, before the webfonts are in. Titles are
+    // narrower in the fallback face, so a title measured then can gain a line
+    // afterwards and keep a break it should have lost.
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(measure);
+    addEventListener("load", measure);
+
+    let pending;
+    addEventListener("resize", () => {
+      clearTimeout(pending);
+      pending = setTimeout(measure, 150);
+    });
+
     const bar = document.querySelector(".pub-filter");
     if (!bar) return;
-    const pubs = document.querySelector(".publications");
 
     function apply(area) {
       pubs.querySelectorAll("ol.bibliography > li").forEach((li) => {

@@ -144,18 +144,25 @@ html[data-theme="dark"] {
 .publications ol.bibliography li {
   margin-bottom: 0.55rem;
   counter-increment: pub;
-  position: relative;
   padding-left: 2.2rem;
 
-  &::before {
-    content: counter(pub) ".";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 1.8rem;
-    text-align: right;
-    color: var(--global-text-color-light);
-    font-variant-numeric: tabular-nums;
+  /* Hung off the title rather than the <li>. Anchoring it to the list item put
+     it at that box's top edge, 9px above where the title's first line actually
+     starts, so the number floated above the text. Positioning against the title
+     keeps it on that first line whatever the row's own spacing does. */
+  .title {
+    position: relative;
+
+    &::before {
+      content: counter(pub) ".";
+      position: absolute;
+      left: -2.2rem;
+      width: 1.8rem;
+      text-align: right;
+      color: var(--global-text-color-light);
+      font-variant-numeric: tabular-nums;
+      font-weight: 400;
+    }
   }
 
   /* Empty year gutter — drop it and let the entry use the full width. */

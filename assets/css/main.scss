@@ -338,6 +338,15 @@ html[data-theme="dark"] {
   }
 }
 
+/* Sits after the buttons and reports what they and the search box left showing.
+   Muted and unemphasised: it is a readout, not another control. */
+.pub-count {
+  color: var(--global-text-color-light);
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
 .pub-filter {
   display: flex;
   flex-wrap: wrap;

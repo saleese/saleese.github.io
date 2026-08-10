@@ -24,6 +24,9 @@ nav_order: 2
     <button type="button" data-area="ai" aria-pressed="false">AI</button>
     <button type="button" data-area="aero" aria-pressed="false">AERO</button>
   </div>
+
+<span class="pub-count" aria-live="polite"></span>
+
 </div>
 
 <div class="publications">
@@ -115,6 +118,25 @@ nav_order: 2
       pending = setTimeout(measure, 150);
     });
 
+    // How many entries are on screen. Both filters have to be taken into account:
+    // the area buttons below use `hidden`, and the gem's text search marks entries
+    // `.unloaded`, so neither one alone is the whole answer.
+    const countEl = document.querySelector(".pub-count");
+    function updateCount() {
+      if (!countEl) return;
+      const n = items.filter((li) => !li.hidden && !li.classList.contains("unloaded")).length;
+      countEl.textContent = n + (n === 1 ? " paper" : " papers");
+    }
+
+    updateCount();
+    // The gem's search runs on DOMContentLoaded and on input, and this script is
+    // inline so its listeners are registered first. Defer past them.
+    const later = () => setTimeout(updateCount, 0);
+    addEventListener("DOMContentLoaded", later);
+    addEventListener("hashchange", later);
+    const search = document.getElementById("bibsearch");
+    if (search) search.addEventListener("input", () => setTimeout(updateCount, 350));
+
     const bar = document.querySelector(".pub-filter");
     if (!bar) return;
 
@@ -134,6 +156,7 @@ nav_order: 2
         }
         h.hidden = empty;
       });
+      updateCount();
     }
 
     bar.addEventListener("click", (e) => {

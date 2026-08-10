@@ -47,6 +47,18 @@
    its own background.
 -------------------------------------------------------------------------------- */
 
+/* The three research areas, sampled from the Venn diagram on the introduction
+   page. Shared by the publication labels, the publication filter and the course
+   group headings, so every page names an area in the same colour.
+
+   CS is not one of the three and is not in the diagram — it is where the courses
+   that teach fundamentals rather than an area sit. Its green is pale enough to
+   read as part of the same set without claiming to be a fourth research area. */
+$area-se: #ffe1e6;
+$area-ai: #cfebfd;
+$area-aero: #9999ff;
+$area-cs: #d8ecd6;
+
 :root {
   --global-bg-color: #f2f2f2;
   --navbar-bg-color: #e4e4e6;
@@ -251,17 +263,16 @@ html[data-theme="dark"] {
     white-space: nowrap;
   }
 
-  /* Sampled from the Venn diagram on the introduction page. */
   .pub-se {
-    background-color: #ffe1e6;
+    background-color: $area-se;
   }
 
   .pub-ai {
-    background-color: #cfebfd;
+    background-color: $area-ai;
   }
 
   .pub-aero {
-    background-color: #9999ff;
+    background-color: $area-aero;
   }
 
   .col-sm-8 {
@@ -398,15 +409,63 @@ html[data-theme="dark"] {
     }
 
     &[data-area="se"].is-active {
-      background-color: #ffe1e6;
+      background-color: $area-se;
     }
 
     &[data-area="ai"].is-active {
-      background-color: #cfebfd;
+      background-color: $area-ai;
     }
 
     &[data-area="aero"].is-active {
-      background-color: #9999ff;
+      background-color: $area-aero;
     }
   }
+}
+
+/* -----------------------------------------------------------------------------
+   Courses: grouped by area
+   -----------------------------------------------------------------------------
+   The courses were one flat run, which gave no sense of what is taught in which
+   area. Grouped the way the previous Google Sites page grouped them, with the
+   heading badges reusing the research-area colours so the reader recognises them
+   from the publications list and the introduction diagram.
+-------------------------------------------------------------------------------- */
+
+.course-group {
+  margin: 2.2rem 0 1rem;
+  font-size: 1.35rem;
+
+  &:first-of-type {
+    margin-top: 0.5rem;
+  }
+}
+
+.course-tag {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 0.12rem 0.55rem;
+  border-radius: 0.6rem;
+  /* Fixed dark ink rather than a theme token: all four fills are pale, so the
+     theme's own text colour would vanish on them in dark mode. */
+  color: #2b2b2b;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  vertical-align: 0.22em;
+}
+
+.course-se {
+  background-color: $area-se;
+}
+
+.course-ai {
+  background-color: $area-ai;
+}
+
+.course-aero {
+  background-color: $area-aero;
+}
+
+.course-cs {
+  background-color: $area-cs;
 }

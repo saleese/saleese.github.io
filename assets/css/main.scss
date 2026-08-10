@@ -180,17 +180,47 @@ html[data-theme="dark"] {
      name and the year, and markdownify's trailing newline shows up as a stray
      space before the comma.
 
-     One float on the wrapper, not on each tag — floating them individually
-     stacks them right to left and reverses the order. Fixed dark ink rather than
-     a theme token: all three fills are pale and --global-card-bg-color is white
-     in light mode. */
+     Fixed dark ink rather than a theme token: all three fills are pale and
+     --global-card-bg-color is white in light mode.
+
+     Pinned to the entry's top right corner, level with the title, rather than
+     laid out in flow. In flow they sat at the end of the venue line, where they
+     were the run most likely to overflow and a wrapped label block cost a whole
+     extra line. Absolute positioning takes them out of the line-breaking decision
+     altogether, so no title length can push them anywhere; `.title` reserves the
+     width they need (see below) so the two never collide.
+
+     The note also carries award text on eleven entries. That stays in flow on the
+     venue line, which is why the labels are moved rather than the whole note. */
   .row {
     display: block;
   }
 
+  .col-sm-8 {
+    position: relative;
+    /* The entry's text now sits in this block's own line boxes, so its strut sets
+       the line height — the 1.35 on the parts themselves no longer decides it. */
+    line-height: 1.35;
+  }
+
   .pub-tags {
+    position: absolute;
+    top: 0.1rem;
+    right: 0;
+    white-space: nowrap;
+  }
+
+  /* The labels are out of flow, so the citation would run underneath them. This
+     float is the first thing in the block, which keeps it to the top right and
+     makes only the first line wrap short of it — exactly the lines the labels
+     cover. `height` is under one line so it never shortens the second line.
+     `--pub-tags-width` is measured per entry by the script in publications.md; a
+     fixed gutter would reserve room for three badges on entries that carry one. */
+  .col-sm-8::before {
+    content: "";
     float: right;
-    margin-left: 0.4rem;
+    width: calc(var(--pub-tags-width, 8rem) + 0.6rem);
+    height: 1rem;
   }
 
   .pub-tag {
@@ -229,12 +259,23 @@ html[data-theme="dark"] {
     line-height: 1.35;
   }
 
-  /* Title keeps its own line; authors and venue flow together on the next one,
-     the way the original site ran each paper as a single citation. Three stacked
-     rows per paper became two. */
+  /* The whole entry runs as one inline citation, the way the original site listed
+     them. A break before the authors is forced only when the title fits on a
+     single line — that gives the familiar title-then-citation shape without ever
+     costing a third line, because a title that already wraps just has the authors
+     continue after its last line.
+     `one-line-title` is set by the script in publications.md; nothing in CSS can
+     tell the two cases apart. */
+  .title,
   .author,
-  .periodical {
+  .periodical,
+  .links {
     display: inline;
+  }
+
+  &.one-line-title .author::before {
+    content: "\A";
+    white-space: pre;
   }
 
   /* The author block's markup ends in whitespace, so a generated separator
@@ -244,16 +285,31 @@ html[data-theme="dark"] {
     margin-left: 0.3rem;
   }
 
-  /* Sits on the end of the venue line instead of claiming a row of its own. */
+  /* DOI goes at the end of the title rather than after the venue. On the venue
+     line it was the part that overflowed, and a wrapped button took a whole third
+     row for itself. The button is last in the markup, so the script in
+     publications.md moves the node; `order` would need a flex container, and a
+     flex container cannot let the authors continue on the line the title ends on.
+
+     The wrapper otherwise inherits a 24px line-height, and the extra leading made
+     the title's line taller than the rest. */
   .links {
-    display: inline;
-    margin-left: 0.4rem;
+    line-height: 1;
+    margin: 0 0.1rem 0 0.2rem;
 
     a.btn {
       padding: 0 0.4rem;
       font-size: 0.7rem;
-      line-height: 1.5;
-      vertical-align: baseline;
+      line-height: 1.4;
+      /* Bootstrap gives the button 6px of vertical margin, which set the height
+         of every entry's first line. Only the gap between buttons is kept. */
+      margin: 0 0.3rem 0 0;
+      /* Sitting the button on the text baseline leaves its border and padding
+         hanging below, which reads as if it had dropped a little. Nudging up by
+         2px centres the box on the text, which is what "on the same line" looks
+         like. */
+      position: relative;
+      top: -2px;
     }
   }
 }

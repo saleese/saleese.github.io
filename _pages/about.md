@@ -27,9 +27,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-**Seonah Lee, Ph.D. (李宣我)**
-
 - [Department of Software Engineering](https://www.gnu.ac.kr/soft/main.do) (Undergraduate)
+- [Department of AI Convergence Engineering](https://www.gnu.ac.kr/soft/cm/cntnts/cntntsView.do?mi=13878&cntntsId=6487) (Graduate)
 - Head, BK21 Phase 4 — [AI Convergence Research & Education Center for Industrial Intelligence in Gyeongsang Province](https://abc.gnu.ac.kr/)
 - Adjunct Professor, [Department of Management of Technology](https://mot.gnu.ac.kr/) (Graduate)
 - Adjunct Professor, [Department of Smart Manufacturing ICT](https://usg.ac.kr/) (Undergraduate, USG University)
@@ -38,10 +37,24 @@ latest_posts:
   601-810, Gyeongsang National University<br />
   Jinjudaero 501, Jinju City<br />
   South Gyeongsang Province, Korea, 52828<br />
+  Email: saleese at gnu dot ac dot kr<br />
   Phone: (82) 055-772-1377
 </p>
 
 <style>
+  /* The page heading is built by the theme from site.first_name/last_name, and
+     the body used to repeat the name to add the degree and the hanja. Appending
+     them to the heading instead drops the repetition without touching the config
+     values, which also drive the footer, the SEO metadata and the citation
+     blocks. Scoped to this page: the style block only ships with about.md. */
+  .post-title::after {
+    content: ", Ph.D. (李宣我)";
+    font-weight: 400;
+    /* The layout puts a newline after the surname, which collapses to a space
+       and would otherwise show up as "Lee , Ph.D." */
+    margin-left: -0.26em;
+  }
+
   /* prof_pic.jpg is 140x180, so capping at 140px shows it pixel-for-pixel — no
      scaling in either direction. The theme otherwise stretches it to the full
      profile column. Only applies from 769px up; below that the theme gives the
@@ -130,3 +143,24 @@ Overall, I am interested in **intelligent software engineering**. I am also inte
 
 - <a href="https://cs.kaist.ac.kr/board/view?bbs_id=news&amp;bbs_sn=6998&amp;menu=83">Dr. Seonah Lee has been appointed to the assistant professor of Gyeongsang University</a>, Mar. 21, 2016
 - <a href="http://www.contrib.andrew.cmu.edu/org/littleredteam/">Little Red Team</a>, Mar. 5, 2005
+
+<script>
+  // The theme prints the news list after the whole page body, below Histories.
+  // It belongs directly under Research Interests, where it reads as what is
+  // currently happening in those areas rather than as an afterthought.
+  //
+  // Moved rather than reordered: the news block is a sibling of the content, not
+  // a child, so `order` would need <article> to become a flex container — and
+  // that would take the floated portrait out of the layout the page depends on.
+  //
+  // On DOMContentLoaded because this script is inline in the content, which the
+  // theme renders before the news markup exists.
+  document.addEventListener("DOMContentLoaded", function () {
+    const news = document.querySelector("article .news");
+    const anchor = document.querySelector(".ri-block");
+    if (!news || !anchor) return;
+    const heading = news.previousElementSibling;
+    anchor.after(news);
+    if (heading && heading.tagName === "H2") anchor.after(heading);
+  });
+</script>

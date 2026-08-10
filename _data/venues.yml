@@ -1,9 +1,11 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+# Research-area labels. Colours are sampled from the Venn diagram on the
+# introduction page (assets/img/research_interests.png): the software-engineering
+# circle, the artificial-intelligence circle, and the drone-systems circle.
+"SE":
+  color: "#ffe1e6"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"AI":
+  color: "#cfebfd"
 
-"Vision":
-  color: "#009f36"
+"AERO":
+  color: "#9999ff"

@@ -28,6 +28,7 @@ latest_posts:
 ---
 
 - [Department of Software Engineering](https://www.gnu.ac.kr/soft/main.do) (Undergraduate)
+- [Department of AI Convergence Engineering](https://www.gnu.ac.kr/soft/cm/cntnts/cntntsView.do?mi=13878&cntntsId=6487) (Graduate)
 - Head, BK21 Phase 4 — [AI Convergence Research & Education Center for Industrial Intelligence in Gyeongsang Province](https://abc.gnu.ac.kr/)
 - Adjunct Professor, [Department of Management of Technology](https://mot.gnu.ac.kr/) (Graduate)
 - Adjunct Professor, [Department of Smart Manufacturing ICT](https://usg.ac.kr/) (Undergraduate, USG University)

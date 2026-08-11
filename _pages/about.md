@@ -140,21 +140,21 @@ Overall, I am interested in **intelligent software engineering**. I am also inte
 
 </div>
 
+## Histories
+
+- <a href="https://cs.kaist.ac.kr/board/view?bbs_id=news&amp;bbs_sn=6998&amp;menu=83">Dr. Seonah Lee has been appointed to the assistant professor of Gyeongsang University</a>, Mar. 21, 2016
+- <a href="http://www.contrib.andrew.cmu.edu/org/littleredteam/">Little Red Team</a>, Mar. 5, 2005
+
 ## Tools Developed
 
 - **NavClus** — <a href="http://github.com/saleese/navclus">github.com/saleese/navclus</a> (<a href="https://www.youtube.com/watch?v=rbrc5ERyWjQ">demo</a>)
 - **NavMine** — <a href="http://www.navmine.com">navmine.com</a> (disabled for a while)
 - **MI** — <a href="https://bitbucket.org/saleese/mi-ve">bitbucket.org/saleese/mi-ve</a>
 
-## Histories
-
-- <a href="https://cs.kaist.ac.kr/board/view?bbs_id=news&amp;bbs_sn=6998&amp;menu=83">Dr. Seonah Lee has been appointed to the assistant professor of Gyeongsang University</a>, Mar. 21, 2016
-- <a href="http://www.contrib.andrew.cmu.edu/org/littleredteam/">Little Red Team</a>, Mar. 5, 2005
-
 <script>
-  // The theme prints the news list after the whole page body, below Histories.
-  // It belongs directly under Research Interests, where it reads as what is
-  // currently happening in those areas rather than as an afterthought.
+  // The theme prints the news list after the whole page body. It belongs
+  // directly under Research Interests, where it reads as what is currently
+  // happening in those areas rather than as an afterthought at the end.
   //
   // Moved rather than reordered: the news block is a sibling of the content, not
   // a child, so `order` would need <article> to become a flex container — and

@@ -2,9 +2,13 @@
 layout: page
 permalink: /services/
 title: services
-description: Committee and chair roles, editorial and reviewing service, and internal/external activities.
 nav: true
 nav_order: 4
+# Heading and description dropped for the reason given in publications.md: the
+# heading repeats the navbar item just clicked, the description restates the
+# section headings. The title stays to label the page in the navbar and the tab.
+_styles: >
+  .post-header { display: none; }
 ---
 
 ## Committee, Chair and Keynote Speaker

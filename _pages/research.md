@@ -2,9 +2,14 @@
 layout: page
 permalink: /research/
 title: research
-description: Reading, venues, people, and groups in software engineering research.
 nav: true
 nav_order: 6
+# Heading and description dropped for the reason given in publications.md: the
+# heading repeats the navbar item just clicked, the description restates what
+# the page's own section headings show. The title stays to label the page in the
+# navbar and the browser tab.
+_styles: >
+  .post-header { display: none; }
 ---
 
 ## Software Repository Mining

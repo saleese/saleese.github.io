@@ -2,9 +2,14 @@
 layout: page
 permalink: /projects/
 title: projects
-description: Funded research projects, in reverse chronological order.
 nav: true
 nav_order: 5
+# Heading and description dropped for the reason given in publications.md: the
+# heading repeats the navbar item just clicked, the description restates what
+# the page's own section headings show. The title stays to label the page in the
+# navbar and the browser tab.
+_styles: >
+  .post-header { display: none; }
 ---
 
 - **항공기용 수소연료전지 전력제어장치(AIPMU)** — 중소벤처기업부 / 중소기업기술정보진흥원, 2026.06–2028.03

@@ -2,9 +2,13 @@
 layout: page
 permalink: /courses/
 title: courses
-description: Courses taught at Gyeongsang National University, grouped by area.
 nav: true
 nav_order: 3
+# Same as the publications page: the heading repeated the navbar item just
+# clicked, and the description restated what the group headings already show.
+# The title stays because it is what labels this page in the navbar and the tab.
+_styles: >
+  .post-header { display: none; }
 ---
 
 <!-- Grouped the way the previous Google Sites page grouped them. The badge

@@ -2,9 +2,14 @@
 layout: page
 permalink: /programming/
 title: programming
-description: Tools, courses, and interview resources for programming.
 nav: true
 nav_order: 7
+# Heading and description dropped for the reason given in publications.md: the
+# heading repeats the navbar item just clicked, the description restates what
+# the page's own section headings show. The title stays to label the page in the
+# navbar and the browser tab.
+_styles: >
+  .post-header { display: none; }
 ---
 
 ## Program Analysis Tools

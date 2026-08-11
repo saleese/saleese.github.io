@@ -2,9 +2,14 @@
 layout: page
 permalink: /writing/
 title: writing
-description: Resources for writing and reading research papers.
 nav: true
 nav_order: 8
+# Heading and description dropped for the reason given in publications.md: the
+# heading repeats the navbar item just clicked, the description restates what
+# the page's own section headings show. The title stays to label the page in the
+# navbar and the browser tab.
+_styles: >
+  .post-header { display: none; }
 ---
 
 ## Writing a Paper

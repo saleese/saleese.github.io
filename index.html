@@ -18,6 +18,13 @@
     margin-left: -0.26em;
   }
 
+  /* The theme hardcodes this heading as lowercase "news" in its own layout, a
+     file this repo must not own. Capitalising it here matches the other headings
+     on the page — Research Interests, Tools Developed, Histories. */
+  .post article h2:has(> a[href$="/news/"]) {
+    text-transform: capitalize;
+  }
+
   /* prof_pic.jpg is 140x180, so capping at 140px shows it pixel-for-pixel — no
      scaling in either direction. The theme otherwise stretches it to the full
      profile column. Only applies from 769px up; below that the theme gives the
@@ -122,42 +129,42 @@ ninja.data = [{
           },
         },{id: "nav-courses",
           title: "courses",
-          description: "Courses taught at Gyeongsang National University, grouped by area.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/courses/";
           },
         },{id: "nav-services",
           title: "services",
-          description: "Committee and chair roles, editorial and reviewing service, and internal/external activities.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/services/";
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "Funded research projects, in reverse chronological order.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
         },{id: "nav-research",
           title: "research",
-          description: "Reading, venues, people, and groups in software engineering research.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
           },
         },{id: "nav-programming",
           title: "programming",
-          description: "Tools, courses, and interview resources for programming.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/programming/";
           },
         },{id: "nav-writing",
           title: "writing",
-          description: "Resources for writing and reading research papers.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/writing/";

@@ -106,6 +106,7 @@ Machine learning and natural language processing.
 ## Online Lectures (Specific)
 
 - [Empirical Research Methods in Software Engineering](http://www.cs.toronto.edu/~sme/CSC2130/)
+- [Psychology 101](https://allpsych.com/psychology101/)
 - [Psychology Classics](http://psychclassics.yorku.ca/Ebbinghaus/index.htm)
 
 ## Presentations

@@ -110,7 +110,10 @@ latest_posts:
     float: left;
     width: 46%;
     max-width: 410px;
-    margin: 0.25rem 1.75rem 0.75rem 0;
+    /* The bottom margin is the whole gap under the diagram: the closing
+       paragraph clears the float, and clearance replaces that paragraph's own
+       top margin. Kept at 0.25rem so the text is not touching the image. */
+    margin: 0.25rem 1.75rem 0.25rem 0;
   }
   /* The closing paragraph used to begin alongside the diagram and then step back
      to the left margin partway through, so it read as two differently indented

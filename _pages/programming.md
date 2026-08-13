@@ -16,53 +16,48 @@ _styles: >
 
 - [Soot](https://soot-oss.github.io/soot/)
 - [Polyglot](https://github.com/polyglot-compiler/polyglot)
-- [ANTLR](http://www.antlr.org/)
-- PPA
+- [ANTLR](https://www.antlr.org/)
+- [PPA](https://www.sable.mcgill.ca/ppa/) — Partial Program Analysis for Java
 
 ## Natural Language Processing Tools
 
 - [LanguageTool](https://languagetool.org/)
 - [Apache OpenNLP](https://opennlp.apache.org/)
-- [LingPipe](http://alias-i.com/lingpipe/)
 
 ## Tools for a Project
 
-- Maven
-- Gradle
-- JDiff
+- [Maven](https://maven.apache.org/)
+- [Gradle](https://gradle.org/)
+- [JDiff](https://javadiff.sourceforge.net/)
 - [AsciiDoctor](https://github.com/asciidoctor/asciidoctorj)
-- [Redmine](http://www.redmine.org/projects/redmine)
+- [Redmine](https://www.redmine.org/projects/redmine)
 
 ## Programming
 
-- [Programming Sites](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxzYWxlZXNlfGd4OjU2ZjY2NWQ3ZGViM2E3NWQ)
-- [Codecademy.com](http://www.codecademy.com/learn)
-- [Code.org](http://code.org/)
-- Ruby on Rails
-  - [Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html)
+- [Codecademy](https://www.codecademy.com/)
+- [Code.org](https://code.org/)
+- [Ruby on Rails](https://rubyonrails.org/)
+  - [Getting Started with Rails](https://guides.rubyonrails.org/getting_started.html)
   - [Ruby (Korean)](https://www.ruby-lang.org/ko/libraries/)
 - [Scala (Korean)](http://twitter.github.io/scala_school/ko/index.html)
 
 ## Programming Interview
 
-- [Microsoft Interview](http://www.technologywoman.com/2008/10/22/top-10-best-microsoft-interview/)
-- [Google Interview](http://xorswap.com/companies/7-google-interview-questions)
-- Glassdoor.com
-- CareerCup.com
 - [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/)
-- LeetCode.com
+- [LeetCode](https://leetcode.com/)
+- [Glassdoor](https://www.glassdoor.com/)
+- [Top 10 Microsoft Interview Questions](https://www.gayle.com/blog/2008/10/22/top-10-best-microsoft-interview/) — Gayle Laakmann McDowell
 
-## Online Lectures (General)
+## Online Lectures
 
 - [edX](https://www.edx.org/)
 - [Coursera](https://www.coursera.org/)
-- [Udacity](http://www.udacity.com/)
-- [MITx](http://mitx.mit.edu/)
-- [Stanford Online](http://online.stanford.edu/courses)
-- [topfreeclasses.com](http://www.topfreeclasses.com/)
-- [More...](http://kldp.org/node/129959)
+- [Udacity](https://www.udacity.com/)
+- [MITx on edX](https://www.edx.org/school/mitx)
+- [Stanford Online](https://online.stanford.edu/explore)
+- [More...](https://kldp.org/node/129959)
 
 ## Others
 
-- [KLDP](http://kldp.org/)
+- [KLDP](https://kldp.org/)
 - [Coding Horror](https://blog.codinghorror.com/)

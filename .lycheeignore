@@ -31,6 +31,7 @@ https://www.reddit.com/
 # Written without a scheme so the pattern matches whichever form the page links to.
 www\.mdpi\.com/about/announcements/
 niklaselmqvist\.medium\.com/
+dl\.acm\.org/
 
 # Offline on purpose — the page itself labels it "(disabled for a while)".
 www\.navmine\.com/

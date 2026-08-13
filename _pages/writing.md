@@ -60,7 +60,7 @@ _styles: >
 
 ## Reading a Paper
 
-- [How to read a paper](http://www.albany.edu/spatial/WebsiteFiles/ResearchAdvices/how-to-read-a-paper.pdf)
+- [How to read a paper](https://dl.acm.org/doi/10.1145/1273445.1273458)
 - [How to Read an Engineering Research Paper](http://cseweb.ucsd.edu/~wgg/CSE210/howtoread.html)
 
 ## Writing Others

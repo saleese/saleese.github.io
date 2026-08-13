@@ -55,7 +55,7 @@ _styles: >
 - How to Write Conclusion
   - [Conclusions](http://writingcenter.unc.edu/handouts/conclusions/)
   - [Strategies for Writing a Conclusion](https://web.archive.org/web/19980219083117/http://leo.stcloudstate.edu/acadwrite/conclude.html) (archived)
-  - [How to Write an Effective Conclusion](http://www.wlu.ca/forms/1676/Conclusion.pdf) (PDF)
+  - [How to Write an Effective Conclusion](https://history.ucla.edu/introductions-conclusions/)
   - [Writing a Conclusion](https://libguides.usc.edu/writingguide/conclusion)
 
 ## Reading a Paper

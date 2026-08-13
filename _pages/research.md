@@ -12,6 +12,53 @@ _styles: >
   .post-header { display: none; }
 ---
 
+## Conference Deadlines
+
+- [SE Deadlines](https://se-deadlines.github.io/) — live countdowns for software engineering venues
+- Conference rankings — [CORE](https://portal.core.edu.au/conf-ranks/)
+- Journal rankings — ISI SE Journals
+
+The tables below are a snapshot, not a live feed. Check the tracker above before
+relying on any date.
+
+### Software Engineering
+
+| Conference | Submission                                   | Dates and venue                                        |
+| ---------- | -------------------------------------------- | ------------------------------------------------------ |
+| ICSE 2027  | Jun 30, 2026 (abstract required, Jun 23)     | Apr 25 – May 1, 2027 · Dublin                          |
+| FSE 2026   | Feb 25, 2026                                 | Jul 5–9, 2026 · Montreal                               |
+| ASE 2026   | Mar 26, 2026                                 | Oct 12–16, 2026 · Munich                               |
+| ICSME 2026 | Mar 6, 2026 (abstract Feb 27)                | Sep 14–18, 2026 · Benevento, Italy                     |
+| MSR 2027   | Oct 23, 2026 (abstract Oct 20)               | Apr 26–27, 2027 · Dublin, co-located with ICSE         |
+| ICPC 2026  | around Nov 2025 (going by the usual pattern) | Apr 12–18, 2026 · Rio de Janeiro, co-located with ICSE |
+| ICST 2025  | Oct 2, 2024 (abstract Sep 25)                | Mar 31 – Apr 4, 2025 · Naples                          |
+| QRS 2026   | Apr 15, 2026 (abstract Apr 8)                | Jul 22–25, 2026 · Florence                             |
+
+### Artificial Intelligence
+
+Machine learning and natural language processing.
+
+| Conference   | Submission                                            | Dates and venue             |
+| ------------ | ----------------------------------------------------- | --------------------------- |
+| NeurIPS 2026 | May 6, 2026 (abstract May 4)                          | from Dec 6, 2026 · Sydney   |
+| ICML 2026    | around Jan 28, 2026 (abstract Jan 24)                 | Jul 6–12, 2026 · Seoul      |
+| ICLR 2026    | abstract Sep 19, 2025                                 | May 1–5, 2026 · Brazil      |
+| AAAI 2026    | abstract Jul 25, 2025                                 | Jan 20–27, 2026 · Singapore |
+| IJCAI 2026   | Jan 19, 2026 (abstract Jan 12)                        | Aug 15–21, 2026 · Bremen    |
+| ACL 2026     | rolling, through ACL Rolling Review                   | Jul 2–7, 2026 · San Diego   |
+| EMNLP 2026   | through ACL Rolling Review, commitment by Aug 2, 2026 | Oct 24–29, 2026 · Budapest  |
+| COLING 2025  | first round, Jan 2025                                 | Jan 19–24, 2025 · Abu Dhabi |
+
+### Drones and Aerospace
+
+| Conference        | Submission                                       | Dates and venue                 |
+| ----------------- | ------------------------------------------------ | ------------------------------- |
+| DASC 2026         | May 2, 2026 (abstract Feb 7)                     | Sep 15–17, 2026 · Orlando, FL   |
+| ICUAS 2025        | Feb 9, 2025                                      | May 14–17, 2025 · Charlotte, NC |
+| AIAA SciTech 2026 | manuscript Dec 2, 2025                           | Jan 12–16, 2026 · Orlando, FL   |
+| ICRA 2026         | closed (usually September of the preceding year) | Jun 1–5, 2026 · Vienna          |
+| IROS 2025         | Mar 2, 2025                                      | Oct 19–25, 2025 · Hangzhou      |
+
 ## Software Repository Mining
 
 - [Data Mining: Concepts and Techniques, 2nd ed](http://www.cs.uiuc.edu/~hanj/bk2/)
@@ -27,17 +74,6 @@ _styles: >
 - Software Product Line Engineering
 - Feature-Oriented Domain Analysis
 - [Literateprogramming.com](http://literateprogramming.com)
-
-## Conferences
-
-- Ranking Conferences — [CORE](https://portal.core.edu.au/conf-ranks/)
-- Ranking Journals — ISI SE Journals
-- [ASE](http://ase2014.org/)
-- [ICSME](http://www.icsme.org/)
-- [OOPSLA](http://2014.splashcon.org/track/oopsla2014)
-- [APSEC](https://conf.researchr.org/series/apsec)
-- [ESEC/FSE](http://www.esec-fse.org/)
-- [ICSE](http://www.icse-conferences.org/)
 
 ## Researchers
 

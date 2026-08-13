@@ -112,10 +112,17 @@ latest_posts:
     float: left;
     width: 50%;
     max-width: 450px;
-    /* The bottom margin is the whole gap under the diagram: the closing
-       paragraph clears the float, and clearance replaces that paragraph's own
-       top margin. Kept at 0.25rem so the text is not touching the image. */
     margin: 0.25rem 1.75rem 0.25rem 0;
+  }
+
+  /* What sits under the diagram is the sum of two margins, not one: this
+     wrapper's, and the 16px the theme puts on the <figure> the include emits.
+     The closing paragraph clears the float, so clearance replaces that
+     paragraph's own top margin and these two are the whole gap. Dropping the
+     inner one leaves the wrapper's 0.25rem, so the text sits just under the
+     image rather than 20px below it. */
+  .ri-figure figure {
+    margin-bottom: 0;
   }
   /* The closing paragraph used to begin alongside the diagram and then step back
      to the left margin partway through, so it read as two differently indented

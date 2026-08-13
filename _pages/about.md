@@ -112,6 +112,15 @@ latest_posts:
     max-width: 410px;
     margin: 0.25rem 1.75rem 0.75rem 0;
   }
+  /* The closing paragraph used to begin alongside the diagram and then step back
+     to the left margin partway through, so it read as two differently indented
+     blocks. Clearing the float starts it below the diagram, flush left, as one
+     block. Only the closing paragraph clears — the heading, the opening line and
+     the three bullets are what the diagram is meant to sit beside. */
+  .ri-block > p:last-of-type {
+    clear: left;
+  }
+
   @media (max-width: 768px) {
     .ri-figure {
       float: none;

@@ -103,15 +103,12 @@ Machine learning and natural language processing.
 - [SEGAL](https://github.com/The-SEGAL-Group)
 - [SPIDER](https://spideruci.org/)
 
-## Online Lectures (Specific)
+## Presentations/Lectures
 
+- [Useful Software Engineering Research](https://www.slideshare.net/slideshow/lionel-briand-icsm-2011-keynote/9500102) — Lionel Briand, ICSM 2011 Keynote
 - [Empirical Research Methods in Software Engineering](http://www.cs.toronto.edu/~sme/CSC2130/)
 - [Psychology 101](https://allpsych.com/psychology101/)
 - [Psychology Classics](http://psychclassics.yorku.ca/Ebbinghaus/index.htm)
-
-## Presentations
-
-- [Useful Software Engineering Research](https://www.slideshare.net/slideshow/lionel-briand-icsm-2011-keynote/9500102) — Lionel Briand, ICSM 2011 Keynote
 
 ## Laws
 

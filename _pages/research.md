@@ -94,14 +94,14 @@ Machine learning and natural language processing.
 - [Christoph Treude](https://ctreude.ca/publications/)
 - [Tao Xie](https://taoxiease.github.io/)
 - [Martin Monperrus](https://www.monperrus.net/martin/publications)
-- [Kwangkeun Yi](https://ropas.snu.ac.kr/~kwang/) ([SNEC](http://ropas.snu.ac.kr/snec/))
+- [Kwangkeun Yi](https://ropas.snu.ac.kr/~kwang/) ([SNEC](http://ropas.snu.ac.kr/snec/) — Semantic-based Non-Essential Change Detection)
 - [Yuanyuan Zhou](https://cseweb.ucsd.edu/~yyzhou/index.html)
 
 ## Groups
 
 - [Software Analytics (Microsoft)](https://www.microsoft.com/en-us/research/group/software-analytics/)
 - [SEGAL](https://github.com/The-SEGAL-Group)
-- [SPIDER](https://spideruci.org/)
+- [Spider Lab](https://spideruci.org/) — University of California, Irvine
 
 ## Presentations/Lectures
 

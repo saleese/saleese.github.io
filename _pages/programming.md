@@ -15,8 +15,8 @@ _styles: >
 ## Program Analysis Tools
 
 - [Soot](https://soot-oss.github.io/soot/)
-- [Polyglot](https://github.com/polyglot-compiler/polyglot)
-- [ANTLR](https://www.antlr.org/)
+- [Polyglot](https://github.com/polyglot-compiler/polyglot) — Polyglot Extensible Compiler Framework for Java
+- [ANTLR](https://www.antlr.org/) — ANother Tool for Language Recognition
 - [PPA](https://www.sable.mcgill.ca/ppa/) — Partial Program Analysis for Java
 
 ## Natural Language Processing Tools
@@ -29,7 +29,7 @@ _styles: >
 - [Maven](https://maven.apache.org/)
 - [Gradle](https://gradle.org/)
 - [JDiff](https://javadiff.sourceforge.net/)
-- [AsciiDoctor](https://github.com/asciidoctor/asciidoctorj)
+- [AsciidoctorJ](https://github.com/asciidoctor/asciidoctorj) — Java bindings for Asciidoctor
 - [Redmine](https://www.redmine.org/projects/redmine)
 
 ## Programming

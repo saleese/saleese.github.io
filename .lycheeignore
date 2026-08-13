@@ -32,16 +32,18 @@ https://www.reddit.com/
 www\.mdpi\.com/about/announcements/
 niklaselmqvist\.medium\.com/
 dl\.acm\.org/
+leetcode\.com/
+www\.glassdoor\.com/
+javadiff\.sourceforge\.net/
 
 # Offline on purpose — the page itself labels it "(disabled for a while)".
 www\.navmine\.com/
 
-# Reachable, but answer 5xx often enough to fail a run at random even with
+# Reachable, but answers 5xx often enough to fail a run at random even with
 # retries (observed alternating 200/503 and 200/500 across probes). Listed so
-# the checker stays trustworthy; the trade is that a real outage of these two
-# would go unreported.
+# the checker stays trustworthy; the trade is that a real outage would go
+# unreported.
 www\.redmine\.org/projects/redmine
-code\.google\.com/p/promisedata/
 
 # Throttles repeat callers hard: answered 200 early in a session, then 503 and
 # connection failures once it had seen a few requests. It is also linked from
@@ -52,7 +54,3 @@ dblp\.org/
 # Blocks non-browser clients outright (403 from CI). Same shape as dblp: it is a
 # profile link the theme repeats on every page, so it cannot be checked here.
 scholar\.google\.com/
-
-# Answers in under a second from a desktop but times out from the GitHub runner,
-# so it looks unreachable only from CI's network.
-xorswap\.com/

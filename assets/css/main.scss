@@ -485,3 +485,44 @@ html[data-theme="dark"] {
   vertical-align: 0.3em;
   text-decoration: none;
 }
+
+/* -----------------------------------------------------------------------------
+   News as a bulleted list
+   -----------------------------------------------------------------------------
+   The theme's news include emits a two-column table, date in a 20% header cell
+   and the item beside it, which reads as a data table rather than a short list of
+   announcements. The markup belongs to the gem, so the rows are restyled instead:
+   each row becomes a list item and the two cells run inline within it.
+
+   Both places that use the include get this — the introduction page and /news/.
+-------------------------------------------------------------------------------- */
+
+.news {
+  table,
+  tbody {
+    display: block;
+  }
+
+  tr {
+    display: list-item;
+    list-style: disc outside;
+    margin-left: 1.15rem;
+    padding: 0.12rem 0;
+  }
+
+  th,
+  td {
+    display: inline;
+    padding: 0;
+    border: 0;
+    /* The include sets width: 20% on the date cell inline. Width does not apply
+       to an inline box, so the dates no longer form a column — a margin is what
+       separates them from the item now. */
+  }
+
+  th {
+    margin-right: 0.45rem;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+}

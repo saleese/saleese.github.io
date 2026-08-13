@@ -25,7 +25,7 @@ _styles: >
 
 - [SE Deadlines](https://se-deadlines.github.io/) — live countdowns for software engineering venues
 - Conference rankings — [CORE](https://portal.core.edu.au/conf-ranks/)
-- Journal rankings — ISI SE Journals
+- Journal rankings — [ISI SE Journals](https://www.cse.chalmers.se/~feldt/advice/se_venues/index.html)
 
 The tables below are a snapshot, not a live feed. Check the tracker above before
 relying on any date. Each one runs in submission-month order, so the leftmost

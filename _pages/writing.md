@@ -14,7 +14,6 @@ _styles: >
 
 ## Writing a Paper
 
-- [Research is communication](http://research.microsoft.com/en-us/um/people/simonpj/papers/giving-a-talk/writing-a-paper-slides.pdf) (PDF)
 - [A thesis proposal is a contract](http://matt.might.net/articles/advice-for-phd-thesis-proposals/)
 - [How to write a thesis proposal](http://www.ldeo.columbia.edu/~martins/sen_res/how_to_thesis_proposal.html)
 - [Tips for Writing Technical Papers](http://infolab.stanford.edu/~widom/paper-writing.html)

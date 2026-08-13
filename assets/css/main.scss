@@ -506,7 +506,9 @@ html[data-theme="dark"] {
   tr {
     display: list-item;
     list-style: disc outside;
-    margin-left: 1.15rem;
+    /* Matches the 40px padding-left the theme gives a <ul>, so these bullets line
+       up with the ones under Histories and Tools Developed. */
+    margin-left: 2.5rem;
     padding: 0.12rem 0;
   }
 

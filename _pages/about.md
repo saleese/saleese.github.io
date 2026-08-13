@@ -127,20 +127,21 @@ latest_posts:
   }
 
   /* The three areas ran tight against each other and ended 79px above the
-     diagram, leaving a blank strip beside its lower edge. Opening them up fills
-     that strip and gives each area its own block. The spacing is split three
-     ways — before the list and between the items — rather than piled into the two
-     gaps, which would have needed ~40px each and read as three separate lists.
+     diagram, leaving a blank strip beside its lower edge. Opening them up gives
+     each area its own block and closes most of that strip, stopping short of the
+     diagram's lower edge rather than reaching it. The spacing is split three ways
+     — before the list and between the items — rather than piled into the two
+     gaps, which would read as three separate lists.
 
-     These are fixed lengths against a reflowing column, so they only line up
-     exactly at full width; narrower and the text simply runs a little past the
-     diagram, which the closing paragraph already clears. */
+     These are fixed lengths against a reflowing column, so they hold only at full
+     width; narrower and the text runs a little past the diagram, which the
+     closing paragraph already clears. */
   .ri-block > ul {
-    margin-top: 1.75rem;
+    margin-top: 1.25rem;
   }
 
   .ri-block > ul > li + li {
-    margin-top: 1.6rem;
+    margin-top: 0.9rem;
   }
 
   @media (max-width: 768px) {

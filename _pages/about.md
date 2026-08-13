@@ -103,13 +103,15 @@ latest_posts:
     display: table;
     clear: both;
   }
-  /* Sized to match the original site, which renders this diagram at 409px wide.
-     Its labels are small enough that the earlier 320px cap made them unreadable.
-     The source image is 861x829, so 410px is still a downscale, not an upscale. */
+  /* The diagram takes the left half of the block and the text the right. The
+     content column is 900px, so half is 450px — which is also the previous 410px
+     cap plus 10%, the two sizings landing on the same number. The source image is
+     965x929, so 450px is still a downscale, not an upscale. The gutter comes out
+     of the text's side, leaving it a little under half. */
   .ri-figure {
     float: left;
-    width: 46%;
-    max-width: 410px;
+    width: 50%;
+    max-width: 450px;
     /* The bottom margin is the whole gap under the diagram: the closing
        paragraph clears the float, and clearance replaces that paragraph's own
        top margin. Kept at 0.25rem so the text is not touching the image. */
@@ -128,7 +130,7 @@ latest_posts:
     .ri-figure {
       float: none;
       width: 100%;
-      max-width: 410px;
+      max-width: 450px;
       margin: 0 auto 1.25rem;
     }
   }

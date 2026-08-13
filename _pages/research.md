@@ -74,6 +74,7 @@ Machine learning and natural language processing.
 - [Mining of Massive Datasets](http://infolab.stanford.edu/~ullman/mmds.html)
 - [Introduction to Information Retrieval](https://nlp.stanford.edu/IR-book/)
 - [GitHub Java Corpus](https://groups.inf.ed.ac.uk/cup/javaGithub/)
+- [PROMISE Repository](https://openscience.us/repo/) — now hosted as tera-PROMISE
 
 ## Software Engineering
 

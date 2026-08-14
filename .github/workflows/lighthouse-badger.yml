@@ -14,9 +14,9 @@ name: "Lighthouse Badger"
 
 # INPUTS as Secrets (env) for not manually triggered workflows
 env:
-  URLS: https://alshedivat.github.io/al-folio/
+  URLS: https://saleese.github.io/
   # If any of the following env is blank, a default value is used instead
-  REPO_BRANCH: "${{ github.repository }} master" # target repository & branch e.g. 'dummy/mytargetrepo main'
+  REPO_BRANCH: "${{ github.repository }} main" # target repository & branch e.g. 'dummy/mytargetrepo main'
   MOBILE_LIGHTHOUSE_PARAMS: "--only-categories=performance,accessibility,best-practices,seo --throttling.cpuSlowdownMultiplier=2"
   DESKTOP_LIGHTHOUSE_PARAMS: "--only-categories=performance,accessibility,best-practices,seo --preset=desktop --throttling.cpuSlowdownMultiplier=1"
 
@@ -32,6 +32,17 @@ on:
 ########################################################################
 # THAT'S IT; YOU DON'T HAVE TO DEFINE ANYTHING IN THE FOLLOWING
 ########################################################################
+
+# The action commits the badges and reports back to this repository. Upstream's
+# template expects a personal access token because it supports writing to a
+# *different* repository; writing to this one only needs the job's own token,
+# with permission to push.
+#
+# Using GITHUB_TOKEN also keeps the workflow from feeding itself: pushes made
+# with it do not raise further workflow events, so the commit this job makes
+# cannot trigger the page_build that started it.
+permissions:
+  contents: write
 
 jobs:
   lighthouse-badger-easy:
@@ -49,7 +60,7 @@ jobs:
       - uses: actions/checkout@v6
         with:
           repository: ${{ env.REPOSITORY }}
-          token: ${{ secrets.LIGHTHOUSE_BADGER_TOKEN }}
+          token: ${{ secrets.LIGHTHOUSE_BADGER_TOKEN || secrets.GITHUB_TOKEN }}
           ref: ${{ env.BRANCH }}
       - uses: actions/checkout@v6
         with:

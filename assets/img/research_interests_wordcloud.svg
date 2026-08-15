@@ -27,7 +27,7 @@
 <text x="330.8" y="460.2" font-size="107.8" fill="#a81f3d">software<title>software — 125 occurrences, SE 83%</title></text>
 <text x="899.8" y="459.1" font-size="104.0" fill="#14598f">issue<title>issue — 115 occurrences, AI 40%</title></text>
 <text x="864.2" y="357.6" font-size="83.8" fill="#14598f">model<title>model — 68 occurrences, AI 39%</title></text>
-<text x="1237.9" y="530.4" font-size="77.9" fill="#14598f">bug<title>bug — 72 occurrences, AI 49%</title></text>
+<text x="1133.1" y="191.8" font-size="77.9" fill="#14598f">bug<title>bug — 72 occurrences, AI 49%</title></text>
 <text x="335.6" y="359.0" font-size="72.9" fill="#a81f3d">architecture<title>architecture — 47 occurrences, SE 96%</title></text>
 <text x="1193.3" y="450.5" font-size="71.3" fill="#14598f">report<title>report — 113 occurrences, AI 46%</title></text>
 <text x="475.5" y="286.1" font-size="69.3" fill="#a81f3d">code<title>code — 53 occurrences, SE 71%</title></text>
@@ -40,48 +40,32 @@
 <text x="666.3" y="739.4" font-size="60.2" fill="#4438a8">analysis<title>analysis — 17 occurrences, AERO 34%</title></text>
 <text x="732.8" y="877.9" font-size="60.2" fill="#4438a8">safety<title>safety — 13 occurrences, AERO 53%</title></text>
 <text x="655.0" y="939.8" font-size="60.2" fill="#4438a8">collision<title>collision — 12 occurrences, AERO 56%</title></text>
-<text x="770.7" y="204.6" font-size="60.2" fill="#14598f">summarization<title>summarization — 26 occurrences, AI 50%</title></text>
+<text x="917.1" y="636.0" font-size="60.2" fill="#14598f">summarization<title>summarization — 26 occurrences, AI 50%</title></text>
 <text x="669.8" y="1010.8" font-size="60.2" fill="#4438a8">avoidance<title>avoidance — 11 occurrences, AERO 65%</title></text>
-<text x="1005.5" y="599.5" font-size="60.2" fill="#14598f">learning<title>learning — 24 occurrences, AI 50%</title></text>
+<text x="1105.1" y="540.8" font-size="60.2" fill="#14598f">learning<title>learning — 24 occurrences, AI 50%</title></text>
 <text x="595.4" y="1071.1" font-size="60.2" fill="#4438a8">reinforcement<title>reinforcement — 6 occurrences, AERO 50%</title></text>
 <text x="1132.7" y="345.1" font-size="60.2" fill="#14598f">LLM<title>LLM — 15 occurrences, AI 50%</title></text>
-<text x="912.7" y="691.2" font-size="60.2" fill="#4438a8">drone<title>drone — 4 occurrences, AERO 67%</title></text>
-<text x="869.3" y="142.5" font-size="60.2" fill="#14598f">language<title>language — 6 occurrences, AI 58%</title></text>
-<text x="930.4" y="870.7" font-size="60.2" fill="#4438a8">teaming<title>teaming — 3 occurrences, AERO 100%</title></text>
+<text x="918.9" y="919.1" font-size="60.2" fill="#4438a8">drone<title>drone — 4 occurrences, AERO 67%</title></text>
+<text x="851.0" y="204.6" font-size="60.2" fill="#14598f">language<title>language — 6 occurrences, AI 58%</title></text>
 <text x="657.5" y="287.5" font-size="57.4" fill="#a81f3d">API<title>API — 31 occurrences, SE 87%</title></text>
 <text x="295.4" y="216.2" font-size="57.4" fill="#a81f3d">documentation<title>documentation — 31 occurrences, SE 82%</title></text>
-<text x="1271.0" y="311.7" font-size="54.9" fill="#14598f">task<title>task — 27 occurrences, AI 44%</title></text>
+<text x="733.4" y="632.6" font-size="54.3" fill="#4a4a4a">label<title>label — 26 occurrences, shared across areas</title></text>
 <text x="332.9" y="688.1" font-size="54.3" fill="#a81f3d">framework<title>framework — 26 occurrences, SE 69%</title></text>
-<text x="920.3" y="926.8" font-size="53.6" fill="#4438a8">system<title>system — 86 occurrences, AERO 22%</title></text>
+<text x="461.8" y="898.0" font-size="53.6" fill="#4438a8">system<title>system — 86 occurrences, AERO 22%</title></text>
+<text x="913.6" y="743.3" font-size="53.0" fill="#4438a8">teaming<title>teaming — 3 occurrences, AERO 100%</title></text>
 <text x="354.1" y="152.9" font-size="52.9" fill="#a81f3d">development<title>development — 24 occurrences, SE 71%</title></text>
 <text x="304.9" y="281.3" font-size="52.9" fill="#a81f3d">tool<title>tool — 24 occurrences, SE 88%</title></text>
-<text x="204.1" y="470.2" font-size="52.2" fill="#a81f3d">view<title>view — 23 occurrences, SE 93%</title></text>
-<text x="1277.8" y="383.4" font-size="50.8" fill="#14598f">user<title>user — 21 occurrences, AI 55%</title></text>
-<text x="658.0" y="631.4" font-size="50.0" fill="#4a4a4a">information<title>information — 30 occurrences, shared across areas</title></text>
 <text x="1001.7" y="812.4" font-size="49.4" fill="#4438a8">service<title>service — 19 occurrences, AERO 47%</title></text>
-<text x="478.8" y="964.3" font-size="46.2" fill="#4438a8">aircraft<title>aircraft — 15 occurrences, AERO 57%</title></text>
 <text x="431.3" y="742.4" font-size="46.0" fill="#a81f3d">execution<title>execution — 23 occurrences, SE 100%</title></text>
-<text x="915.1" y="740.6" font-size="45.8" fill="#4438a8">unmanned<title>unmanned — 2 occurrences, AERO 75%</title></text>
+<text x="918.5" y="859.9" font-size="45.8" fill="#4438a8">unmanned<title>unmanned — 2 occurrences, AERO 75%</title></text>
 <text x="242.7" y="604.1" font-size="45.4" fill="#a81f3d">update<title>update — 22 occurrences, SE 77%</title></text>
 <text x="433.1" y="830.3" font-size="43.4" fill="#4438a8">network<title>network — 19 occurrences, AERO 34%</title></text>
-<text x="726.0" y="676.3" font-size="41.7" fill="#4a4a4a">based<title>based — 27 occurrences, shared across areas</title></text>
-<text x="796.6" y="494.9" font-size="41.2" fill="#4a4a4a">label<title>label — 26 occurrences, shared across areas</title></text>
-<text x="1140.8" y="682.9" font-size="39.2" fill="#14598f">accuracy<title>accuracy — 22 occurrences, AI 43%</title></text>
-<text x="187.5" y="387.3" font-size="39.2" fill="#a81f3d">source<title>source — 22 occurrences, SE 77%</title></text>
-<text x="443.4" y="786.0" font-size="38.6" fill="#a81f3d">project<title>project — 21 occurrences, SE 79%</title></text>
-<text x="216.2" y="285.1" font-size="38.1" fill="#a81f3d">help<title>help — 20 occurrences, SE 68%</title></text>
-<text x="509.5" y="882.7" font-size="34.7" fill="#4438a8">performance<title>performance — 43 occurrences, AERO 20%</title></text>
-<text x="474.8" y="97.7" font-size="31.1" fill="#a81f3d">outdated<title>outdated — 18 occurrences, SE 89%</title></text>
-<text x="1094.9" y="643.2" font-size="30.0" fill="#14598f">recommendation<title>recommendation — 28 occurrences, AI 48%</title></text>
-<text x="615.4" y="677.4" font-size="29.6" fill="#a81f3d">name<title>name — 15 occurrences, SE 97%</title></text>
-<text x="765.9" y="311.6" font-size="28.4" fill="#a81f3d">effort<title>effort — 13 occurrences, SE 73%</title></text>
-<text x="976.0" y="960.8" font-size="27.9" fill="#4438a8">application<title>application — 12 occurrences, AERO 33%</title></text>
-<text x="1248.7" y="611.8" font-size="27.9" fill="#14598f">manual<title>manual — 12 occurrences, AI 42%</title></text>
-<text x="649.4" y="513.0" font-size="25.4" fill="#4a4a4a">detection<title>detection — 16 occurrences, shared across areas</title></text>
-<text x="789.5" y="449.2" font-size="25.4" fill="#4a4a4a">feature<title>feature — 16 occurrences, shared across areas</title></text>
-<text x="634.8" y="96.6" font-size="25.4" fill="#a81f3d">quality<title>quality — 16 occurrences, SE 88%</title></text>
-<text x="1104.7" y="530.4" font-size="24.9" fill="#14598f">relevant<title>relevant — 15 occurrences, AI 43%</title></text>
-<text x="1178.7" y="717.3" font-size="24.5" fill="#14598f">summary<title>summary — 14 occurrences, AI 50%</title></text>
+<text x="620.3" y="681.9" font-size="41.1" fill="#4438a8">performance<title>performance — 43 occurrences, AERO 20%</title></text>
+<text x="429.9" y="785.5" font-size="36.9" fill="#a81f3d">outdated<title>outdated — 18 occurrences, SE 89%</title></text>
+<text x="177.2" y="462.7" font-size="36.3" fill="#a81f3d">process<title>process — 17 occurrences, SE 79%</title></text>
+<text x="188.4" y="386.3" font-size="35.7" fill="#a81f3d">metrics<title>metrics — 16 occurrences, SE 94%</title></text>
+<text x="904.4" y="680.2" font-size="35.6" fill="#14598f">recommendation<title>recommendation — 28 occurrences, AI 48%</title></text>
+<text x="717.0" y="509.3" font-size="29.6" fill="#a81f3d">reconstruction<title>reconstruction — 15 occurrences, SE 100%</title></text>
 </g>
 <g font-family="Helvetica,Arial,sans-serif" font-weight="700" font-size="54" fill="#2b2b2b" text-anchor="middle">
 <text x="450" y="58">Software Engineering</text>

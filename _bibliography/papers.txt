@@ -1,0 +1,1174 @@
+Publications — titles and abstracts
+========================================================================================
+
+Every paper listed on https://saleese.github.io/publications/, in the order the page
+shows them. Titles come from _bibliography/papers.bib. The abstracts are not in that
+file and were retrieved from Crossref, OpenAlex, Semantic Scholar and KoreaScience.
+
+Papers: 138    With abstract: 54
+Generated: 2026-08-15
+
+A title that stands alone has no abstract here, because no indexing service publishes
+one for it. That is most of the Korean-language domestic entries, which these services
+do not cover, and many IEEE papers, since IEEE does not deposit abstracts with Crossref.
+
+Everything here is in English. Where a paper was published in Korean, an official
+English title or abstract was used when one is on record; otherwise it is a translation
+of the Korean original and is marked (tr.). Nothing is paraphrased or invented: an
+unmarked abstract is the publisher's own text, and a marked one is a faithful
+translation of the published Korean abstract.
+
+
+========================================================================================
+TOP-TIER JOURNALS
+========================================================================================
+
+[1] Automatic Detection and Update Suggestion for Outdated API Names in Documentation
+
+    Application programming interfaces (APIs) continually evolve to meet ever-changing
+    user needs, and documentation provides an authoritative reference for their usage.
+    However, API documentation is commonly outdated because nearly all of the associated
+    updates are performed manually. Such outdated documentation, especially with regard
+    to API names, causes major software development issues. In this paper, we propose a
+    method for automatically updating outdated API names in API documentation. Our
+    insight is that API updates in documentation can be derived from API implementation
+    changes between code revisions. To evaluate the proposed method, we applied it to
+    four open source projects. Our evaluation results show that our method, FreshDoc,
+    detects outdated API names in API documentation with 48 percent higher accuracy than
+    the existing state-of-the-art methods do. Moreover, when we checked the updates
+    suggested by FreshDoc against the developers' manual updates in the revised
+    documentation, FreshDoc detected 82 percent of the outdated names. When we reported
+    40 outdated API names found by FreshDoc via issue tracking systems, developers
+    accepted 75 percent of the suggestions. These evaluation results indicate that
+    FreshDoc can be used as a practical method for the detection and updating of API
+    names in the associated documentation.
+
+[2] The Impact of View Histories on Edit Recommendations
+
+    Recommendation systems are intended to increase developer productivity by
+    recommending files to edit. These systems mine association rules in software
+    revision histories. However, mining coarse-grained rules using only edit histories
+    produces recommendations with low accuracy, and can only produce recommendations
+    after a developer edits a file. In this work, we explore the use of finer-grained
+    association rules, based on the insight that view histories help characterize the
+    contexts of files to edit. To leverage this additional context and fine-grained
+    association rules, we have developed MI, a recommendation system extending ROSE, an
+    existing edit-based recommendation system. We then conducted a comparative
+    simulation of ROSE and MI using the interaction histories stored in the Eclipse
+    Bugzilla system. The simulation demonstrates that MI predicts the files to edit with
+    significantly higher recommendation accuracy than ROSE (about 63 over 35 percent),
+    and makes recommendations earlier, often before developers begin editing. Our
+    results clearly demonstrate the value of considering both views and edits in systems
+    to recommend files to edit, and results in more accurate, earlier, and more flexible
+    recommendations.
+
+
+========================================================================================
+INTERNATIONAL JOURNALS
+========================================================================================
+
+[1] An MCP Tool for Bug Localization by Leveraging Modification Frequencies of Similar
+    Bug Reports
+
+    During software maintenance, developers spend a considerable amount of time locating
+    the source of bugs. Despite the advent of LLMs and vibe coding, accurately
+    identifying the locations for bug fixes in large-scale codebases remains an
+    unresolved challenge. In this paper, we propose a new bug localization approach that
+    counts the modification frequencies of similar bug reports for identifying source
+    locations that cause bugs. Given a new bug report, our approach extracts the similar
+    bug reports that include completed bug fixes. Then, our approach counts the number
+    of times that each method was modified in those similar reports. Finally, our
+    approach identifies the methods that were frequently modified in those similar
+    reports and recommends the methods to be fixed. We also implement the approach as an
+    MCP tool that can be used in LLM-based development environments. We evaluated our
+    approach against reimplemented versions of FineLocator as well as LLMs on seven
+    open-source projects. Across all projects our approach increased Precision@10,
+    Recall@10, MAP, and MRR by 2.12, 2.22, 2.50, and 2.71 times, respectively, over
+    those of the state-of-the art approach FineLocator. When deployed as an MCP tool,
+    MCP+LLM yields 0.52, 0.35, 0.36, and 0.34, compared to LLM-only at 0.17, 0.09, 0.11,
+    and 0.10 across the same metrics. These gains hold for both Java and Python
+    codebases, demonstrating that combining large-languagemodel semantics with
+    modification-frequency evidence yields substantially more accurate and
+    languageagnostic bug localization than conventional methods. Our implementation,
+    datasets, and replication scripts are publicly released to foster future research
+    and industrial adoption of high-precision method-level bug localization.
+
+[2] A Multimodal Deep Learning Model for Cross-Project Issue Classification
+
+    Software continuously evolves through changes, and issue reports encapsulate these
+    change requests. In the GitHub system, a labeling mechanism has been introduced for
+    systematic issue management, but significant effort from developers is required to
+    label and manage these issues. To address this, numerous attempts have been made in
+    previous research to automate issue report classification. However, these attempts
+    have shown limitations in classification accuracy. We experiment to determine if
+    integrating heterogeneous information through a multimodal model that combines text,
+    images, and code from issue reports can improve classification accuracy.
+    Specifically, we investigate whether training the model on extensive issue data can
+    enhance classification accuracy. Experimental results show that the multimodal
+    approach outperforms single-modal models by 5.50-7.01% in terms of F1-Score,
+    demonstrating superior performance. These findings indicate that leveraging
+    heterogeneous data sources in issue reports is effective in improving classification
+    performance.
+
+[3] Data-Efficient Reinforcement Learning Framework for Autonomous Flight Based on Real-
+    World Flight Data
+
+    Recently, autonomous flight has emerged as a key technology in the aerospace and
+    defense sectors; however, traditional code-based autonomous flight systems face
+    limitations in complex environments. Although reinforcement learning offers an
+    alternative, its practical application in real-world settings is hindered by the
+    substantial data requirements. In this study, we develop a framework that integrates
+    a Generative Adversarial Network (GAN) and Hindsight Experience Replay (HER) into
+    model-based reinforcement learning to enhance data efficiency and accuracy. We
+    compared the proposed framework against existing algorithms in actual quadcopter
+    control. In the comparative experiment, we demonstrated an improvement of up to
+    70.59% in learning speed, clearly highlighting the impact of the environmental
+    model. To the best of our knowledge, this study is the first where a GAN and HER are
+    combined with model-based reinforcement learning, and it is expected to contribute
+    significantly to the practical application of reinforcement learning in autonomous
+    flight.
+
+[4] Reconstruction of an Execution Architecture View by Identifying Mapping Rules for
+    Connectors
+
+    • To our knowledge, this is the first method that focuses on connectors for the
+    reconstruction of an execution view. • We developed the tools that automate the
+    steps of the method, which can handle large volumes of input data. • To evaluate our
+    proposed method, we conducted three real-world case studies. • Our case studies
+    demonstrated that the proposed approach reconstructs an execution architecture with
+    more than 86 % F1-score and less than 13.9 person-hours. • The tools and evaluation
+    results are available at our GitHub repository. An execution architecture view plays
+    a crucial role in depicting the structure of a software system at runtime and
+    analyzing its execution aspects, such as concurrency and performance. However, such
+    execution views are frequently missing in real-world practices. Therefore,
+    researchers have endeavored to reconstruct execution architecture views from
+    software systems. However, existing approaches either require domain experts’
+    knowledge or are applicable only to systems with particular architecture styles. In
+    this paper, we propose a systematic approach to reconstructing an execution
+    architecture view, without prior knowledge of the components and connectors in the
+    target system. With the proposed approach, by defining a candidate set of execution
+    view connectors and mapping rules from source code to execution view connectors,
+    developers can reconstruct an execution view. To evaluate the proposed approach, we
+    applied it to three real-world software systems. Our evaluation results show that
+    the proposed approach reconstructs an execution architecture with a higher than 86 %
+    F1-score and less than 13.9 person-hours.
+
+[5] A Multidocument Summarization Technique for Informative Bug Summaries
+
+    To help developers grasp bug information, bug summaries should contain bug
+    descriptions and information on the reproduction steps, environment, and solutions
+    to be informative for developers. However, previously established bug report
+    summarization techniques generate bug summaries mainly by identifying significant
+    sentences, which often miss those bug report attributes. In this paper, we aim to
+    generate informative summaries that cover these specific bug report attributes in a
+    structured form. There are two challenges. First, the relevant information is
+    sometimes scattered over multiple sources. Second, information on the reproduction
+    steps and environment is often filtered out by previous techniques, which identify
+    significant sentences on the basis of their relationships. Therefore, we propose a
+    bug summarization technique that collects information from multiple sources,
+    including duplicates and pull requests, and a classification technique for
+    identifying sentences that provide relevant information on the reproduction steps
+    and environment. Our proposed technique, ClaSum, consists of four steps:
+    preprocessing, classification, sentence ranking, and summarization. We adopted
+    RoBERTa for our classification step, Opinion and Topic association scores for the
+    sentence ranking step, and BART for the summarization step. Our comparative
+    experiments show that our technique outperforms the state-of-the-art technique
+    BugSum in terms of the F1 score by 14%, 8%, and 35% on the SDS, ADS, and DDS
+    datasets, respectively. Additionally, our qualitative investigation shows that our
+    technique generates a more structural summary than two well-known LLMs, Gemini and
+    Claude.
+
+[6] A Comparison of Pretrained Models for Classifying Issue Reports
+
+    Issues are evolving requirements which are the main factor that increase the cost of
+    software evolution. To help developers manage issues, GitHub provides issue labeling
+    mechanisms in issue management systems. However, manually labeling issue reports
+    still requires considerable developer effort. To ease developers’ burden,
+    researchers have proposed automatically classifying issue reports. They used deep
+    learning techniques and pretrained models to improve the classification accuracy.
+    However, pretrained models in the general domain such as RoBERTa have limitations in
+    understanding the contexts of software engineering tasks. In this paper, we create a
+    pretrained model IssueBERT with issue data to understand if a domain-specific
+    pretrained model could improve the accuracy of classifying issue reports. We also
+    adopt and explore several pretrained models with software engineering domains,
+    CodeBERT, BERTOverflow, and seBERT. We conduct a comparative experiment of these
+    pretrained models to understand their performance in classifying issue reports. Our
+    comparison results show that IssueBERT outperforms other pretrained models.
+    Noticeably, IssueBERT yields an average F1 score that is 1.74% higher than that of
+    seBERT and 3.61% higher than that of RoBERTa, even though IssueBERT was pretrained
+    with much less data than seBERT and RoBERTa.
+
+[7] Automated code-based test case reuse for software product line testing
+
+[8] A Multimodal Deep Learning Model Using Text, Image, and Code Data for Improving
+    Issue Classification Tasks
+
+    Issue reports are valuable resources for the continuous maintenance and improvement
+    of software. Managing issue reports requires a significant effort from developers.
+    To address this problem, many researchers have proposed automated techniques for
+    classifying issue reports. However, those techniques fall short of yielding
+    reasonable classification accuracy. We notice that those techniques rely on text-
+    based unimodal models. In this paper, we propose a novel multimodal model-based
+    classification technique to use heterogeneous information in issue reports for issue
+    classification. The proposed technique combines information from text, images, and
+    code of issue reports. To evaluate the proposed technique, we conduct experiments
+    with four different projects. The experiments compare the performance of the
+    proposed technique with text-based unimodal models. Our experimental results show
+    that the proposed technique achieves a 5.07% to 14.12% higher F1-score than the
+    text-based unimodal models. Our findings demonstrate that utilizing heterogeneous
+    data of issue reports helps improve the performance of issue classification.
+
+[9] A Comparison of Summarization Methods for Duplicate Software Bug Reports
+
+    Bug reports vary in length, while some bug reports are lengthy, others are too brief
+    to describe bugs in detail. In such a case, duplicate bug reports can serve as
+    valuable resources for enriching bug descriptions. However, existing bug
+    summarization methods mainly focused on summarizing a single bug report. In this
+    paper, we focus on summarizing duplicate bug reports. By doing so, we aim to obtain
+    an informative summary of bug reports while reducing redundant sentences in the
+    summary. We apply several text summarization methods to duplicate bug reports. We
+    then compare summarization results generated by different summarization methods and
+    identify the most effective method for summarizing duplicate bug reports. Our
+    comparative experiment reveals that the extractive multi-document method based on
+    TF-IDF is the most effective in the summarization. This method successfully captures
+    the relevant information from duplicate bug reports, resulting in comprehensive
+    summaries. These results contribute to the advancement of bug summarization
+    techniques, especially in summarizing duplicate bug reports.
+
+[10] A Systematic Literature Review of Issue-Based Requirement Traceability
+
+    Issue reports are software artifacts that often specify the changed requirements of
+    software systems. As software systems evolve according to these changed
+    requirements, issue reports have become the essential artifacts that should be
+    covered by requirement traceability. While researchers have developed automatic
+    approaches for establishing the traceability links of issue reports, no papers have
+    surveyed these approaches. In this paper, we conduct a systematic literature review
+    of issue-based requirement traceability. We searched for articles published in
+    renowned conferences and journals in the software engineering field from 2011 to
+    2022. From 1,347 initial articles, we identified 40 relevant articles. We
+    investigated four aspects of issue-based traceability: problems, artifact pairs,
+    techniques, and evaluation targets. Our findings are as follows. First, the
+    challenges of issue-based requirement traceability are relevant to accuracy, effort,
+    support, information, and trustworthiness. Second, issue reports are linked to
+    commits, source code, user reviews, and test cases. Third, the studies mainly
+    adopted machine learning and information retrieval techniques to generate and
+    recover trace links. Finally, the main evaluation targets were open-source projects,
+    but open datasets were also provided.
+
+[11] FANET Routing Protocol Analysis for Multi-UAV-Based Reconnaissance Mobility Models
+
+    Different from mobile ad hoc networks (MANETs) and vehicular ad hoc networks
+    (VANETs), a flying ad hoc network (FANET) is a very low-density network where node
+    topology changes rapidly and irregularly. These characteristics, the density,
+    mobility, and speed of flight nodes, affect the performance of FANET. Furthermore,
+    application scenarios and environmental settings could affect the performance of
+    FANETs. In this paper, we analyzed the representative FANET protocols, AODV, DSDV,
+    and OLSR, according to mobility models, SRWP, MP, RDPZ, EGM, and DPR, under the
+    multi-UAV-based reconnaissance scenario. We evaluated them in terms of the number of
+    nodes, network connectivity, mobility model’s reconnaissance rate, speed of nodes,
+    and ground control station (GCS) location. As a result, we found that AODV showed
+    the highest PDR performance (81%) with SRWP in multiple UAV-based reconnaissance
+    scenarios. As for a mobility model under the consideration of reconnaissance rate,
+    SRWP was excellent at 76%, and RDPZ and EGM mobility models were reasonable at 62%
+    and 60%, respectively. We also made several interesting observations such as how
+    when the number of nodes increases, the connectivity of the network increases, but
+    the performance of the routing protocol decreases, and how the GCS location affects
+    the PDR performance of the combination of routing protocols and mobility models.
+
+[12] Classifying issue reports according to feature descriptions in a user manual based
+    on a deep learning model
+
+    Issue reports are documents with which users report problems and state their
+    opinions on a software system. Issue reports are useful for software maintenance,
+    but managing them requires developers’ considerable manual effort. To reduce such
+    effort, previous studies have mostly suggested methods for automatically classifying
+    issue reports. However, most of those studies classify issue reports according to
+    issue types, based only on whether the report is relevant to a bug, whether the
+    report is duplicated, or whether the issue is functional or nonfunctional. In this
+    paper, we intend to link issue reports and a user manual and so propose a deep
+    learning model-based method that classifies issue reports according to software
+    features that are described in the user manual in order to help developers relate
+    issue reports to features to make changes to a software system. In order to classify
+    issue reports according to the feature descriptions in a user manual, our method
+    uses a deep learning technique with a word embedding technique. The key insight in
+    our method is that the sections of a user manual that describe software features
+    contain the words and sentences similar to those in issue reports. Based on the
+    insight, we construct a classification model that learns the feature descriptions
+    (i.e. sections) in a user manual and classifies issue reports according to the
+    feature descriptions. We evaluate the proposed method by comparing its
+    classification performance with that of the state-of-the-art method, TicketTagger.
+    The experimental results show that the proposed method yields 10% ∼ 24% higher
+    classification f1-score than that of TicketTagger. We also experiment with two deep
+    learning models and four word embedding techniques and find out that the Convolution
+    Neural Network model with FastText (or GloVe) yields the best performance. Our study
+    shows the feasibility of classifying issue reports according to software features,
+    which can be the basis for successive studies to classify issue reports into
+    software features.
+
+[13] Deep Learning-Based Bug Report Summarization Using Sentence Significance Factors
+
+    During the maintenance phase of software development, bug reports provide important
+    information for software developers. Developers share information, discuss bugs, and
+    fix associated bugs through bug reports; however, bug reports often include complex
+    and long discussions, and developers have difficulty obtaining the desired
+    information. To address this issue, researchers proposed methods for summarizing bug
+    reports; however, to select relevant sentences, existing methods rely solely on word
+    frequencies or other factors that are dependent on the characteristics of a bug
+    report, failing to produce high-quality summaries or resulting in limited
+    applicability. In this paper, we propose a deep-learning-based bug report
+    summarization method using sentence significance factors. When conducting
+    experiments over a public dataset using believability, sentence-to-sentence
+    cohesion, and topic association as sentence significance factors, the results show
+    that our method outperforms the state-of-the-art method BugSum with respect to
+    precision, recall, and F-score and that the application scope of the proposed method
+    is wider than that of BugSum.
+
+[14] Resource allocation through logistic regression and multicriteria decision making
+    method in IoT fog computing
+
+    Cloud computing has received a lot of attention from both researcher and developer
+    in last decade due to its unique structure of providing services to the user. As the
+    digitalization of world, heterogeneous devices, and with the emergence of Internet
+    of Things (IoT), these IoT devices produce different type of data with distinct
+    frequency, which require real‐time and latency sensitive services. This provides
+    great challenge to cloud computing framework. Fog computing is a new framework to
+    accompaniment cloud platform and is proposed to extend services to the edge of the
+    network. In fog computing, the entire user's tasks are offloaded to distributed fog
+    nodes to the edge of network to avoid delay sensitivity. We select fog computing
+    network dwell different set of fog nodes to provide required services to the users.
+    Allocation of defined resource to the users in order to achieve optimal result is a
+    big challenge. Therefore, we propose dynamic resource allocation strategy for cloud,
+    fog node, and users. In the framework, we first formulate the ranks of fog node
+    using TOPSIS to identify most suitable fog node for the incoming request.
+    Simultaneously logistic regression calculates the load of individual fog node and
+    updates the result to send back to the broker for next decision. Simulation results
+    demonstrate that the proposed scheme undoubtedly improves the performance and give
+    accuracy of 98.25%.
+
+[15] A fine-grained secure service provisioning platform for hypervisor systems
+
+    As computing technology has been recently widely adopted, most computing devices
+    provide security-related services as basic requirements, which is an important
+    research issue for sustainability of computing devices. The rapid increase of
+    software components makes it difficult to detect or prevent vulnerabilities in the
+    large-size software. One of the prominent approaches for ensuring secure service is
+    the isolation of service which allows the related code and data to be executed only
+    in a particular area. In this paper, we provide a secure service provisioning
+    platform for hypervisor systems. The main contribution of the proposed framework is
+    to enhance the previous secure service provisioning platform in order to solve the
+    non-preemption problem of secure services. Thus, the proposed framework improves the
+    security isolation service in hypervisors and can be used for fine-grained secure
+    service in secure embedded systems.
+
+[16] Code Edit Recommendation Using a Recurrent Neural Network
+
+    When performing software evolution tasks, developers spend a significant amount of
+    time looking for files to modify. By recommending files to modify, a code edit
+    recommendation system reduces the developer’s navigation time when conducting
+    software evolution tasks. In this paper, we propose a code edit recommendation
+    method using a recurrent neural network (CERNN). CERNN forms contexts that maintain
+    the sequence of developers’ interactions to recommend files to edit and stops
+    recommendations when the first recommendation becomes incorrect for the given
+    evolution task. We evaluated our method by comparing it with the state-of-the-art
+    method MI-EA that was developed based on the association rule mining technique. The
+    result shows that our proposed method improves the average recommendation accuracy
+    by approximately 5% over MI-EA (0.64 vs. 0.59 F-score).
+
+[17] An Empirical Study on Using Multi-Labels for Issues in GitHub
+
+    On GitHub, one of the most successful services for software project hosting, labels
+    have been used to represent various information and decisions about reported issues.
+    However, previous studies on labels were limited to simple statistics or label
+    recommendations for issue types. In this paper, we aim to provide a better
+    understanding of labels and their usage in software development. We particularly
+    focus on using multiple and custom labels on issues. To analyze label usage, we
+    collected software project data and label usage information from GitHub. We then
+    quantitatively investigated the performance of projects with multi-label features
+    and qualitatively investigated the categories of multi-labels, and the usage of
+    multi-labels based on these categories. Our analysis results show that multi-labels
+    are common in the majority of software projects and that projects using multi-label
+    features manage their issues more effectively. In addition, our analysis results
+    reveal different types of information represented by labels, which are related to
+    features, development, and issues. This study finds several facts that can be used
+    for studies on issue management and thus that help develop labeling techniques to
+    mitigate the burden of issue management.
+
+[18] Development of Multi-Quadrotor Simulator Based on Real-Time Hypervisor Systems
+
+    Today, simulator technology has been widely used as an important part of quadrotor
+    development such as validation and testing. A good quadrotor simulator can simulate
+    the quadrotor system as closely as possible to the real one. Therefore, in case of
+    multi-quadrotor simulator, the simulator should not only can simulate a multi-
+    quadrotor system, but also every quadrotor should be able to leverage their own
+    resources. To solve this issues, in this paper, we present a hypervisor-based multi-
+    quadrotor simulator. We used RT-Xen as hypervisor, a real-time Xen hypervisor. To
+    ensure every quadrotor runs in real-time manner, we implemented quadrotor simulator
+    in Litmus-RT which is a real-time extension of Linux. In this paper, we conducted
+    some testing and performance evaluation for particular cases on our multi-quadrotor
+    simulator: step-input responses, computation time, and response times. Based on the
+    performance evaluation, our hypervisor-based multi-quadrotor simulator environment
+    is proven to meet the real-time requirements. The results show that three important
+    tasks in quadrotor system: Stability Controllability Augmented System (SCAS),
+    Equation of Motion (EOM), and waypoint following task, are finished before their
+    deadlines; in fact, 20 ms, 10 ms, and 40 ms before the deadlines for SCAS, EOM, and
+    waypoint following, respectively.
+
+[19] Overlap avoidance of mobility models for multi-UAVs reconnaissance
+
+    As avionics technologies have advanced, it is possible to perform many aerial
+    applications which demand cooperative work with multiple Unmanned Aerial Vehicles
+    (UAVs). Since one of the basic applications is reconnaissance, we focus on efficient
+    cooperative reconnaissance. While random mobility models are useful for multi-UAVs
+    reconnaissance, they suffer from overlapped reconnaissance problem that two or more
+    UAVs reconnoiter a region at the same time. The overlapped reconnaissance also leads
+    to imbalanced reconnaissance in which an area scanned by one UAV may be re-visited
+    soon by the other UAV. Thus, we provide overlap avoidance schemes for the existing
+    reconnaissance mobility models and enhance their performance. Throughout the
+    simulations, we evaluate the effect of applying overlap avoidance in the existing
+    models. The simulation results show that overlapped area is reduced by up to 20
+    times and 90%-coverage reaching time is improved by up to 19%.
+
+[20] Reducing dynamic power consumption in mixed-critical real-time systems
+
+    In this paper, we study energy minimization consumption of a mixed criticality real-
+    time system on uni-core. Our focus is on a new scheduling scheme to decrease the
+    frequency level in order to conserve power. Since many systems are equipped with
+    dynamic power and frequency level memory, power can be saved by decreasing the
+    system frequency. In this paper, we provide new dynamic energy minimization
+    consumption in mixed-criticality real-time systems. Recent research has been done on
+    low-criticality mode for power reduction. Thus, the proposed scheme can reduce the
+    energy both in high-criticality and low-criticality modes. The effectiveness of our
+    proposed scheme in energy reduction is clearly shown through simulations results.
+
+[21] A Weighted PageRank-Based Bug Report Summarization Method Using Bug Report
+    Relationships
+
+    For software maintenance, bug reports provide useful information to developers
+    because they can be used for various tasks such as debugging and understanding
+    previous changes. However, as they are typically written in the form of
+    conversations among developers, bug reports tend to be unnecessarily long and
+    verbose, with the consequence that developers often have difficulties reading or
+    understanding bug reports. To mitigate this problem, methods that automatically
+    generate a summary of bug reports have been proposed, and various related studies
+    have been conducted. However, existing bug report summarization methods have not
+    fully exploited the inherent characteristics of bug reports. In this paper, we
+    propose a bug report summarization method that uses the weighted-PageRank algorithm
+    and exploits the 'duplicates’, ‘blocks’, and ‘depends-on’ relationships between bug
+    reports. The experimental results show that our method outperforms the state-of-the-
+    art method in terms of both the quality of the summary and the number of applicable
+    bug reports.
+
+[22] EMSA: Extensibility Metric for Software Architecture
+
+    Software extensibility, the capability of adding new functions to a software system,
+    is established based on software architecture. Therefore, developers need to
+    evaluate the capability when designing software architecture. To support the
+    evaluation, researchers have proposed metrics based on quality models or scenarios.
+    However, those metrics are vague or subjective, depending on specific systems and
+    evaluators. We propose the extensibility metric for software architecture (EMSA),
+    which represents the degree of extensibility of a software system based on its
+    architecture. To reduce the subjectivity of the metric, we first identify a typical
+    task of adding new functions to a software system. Second, we define the metrics
+    based on the characteristics of software architecture and its changes and finally
+    combine them into a single metric. The originality of EMSA comes from defining
+    metrics based on software architecture and extensibility tasks and integrating them
+    into one. Furthermore, we made an effort to translate the degree into effort
+    estimation expressed as person-hours. To evaluate EMSA, we conducted two types of
+    user studies, obtaining measurements in both a laboratory and a real-world project.
+    The results show that the EMSA estimation is reasonably accurate [6.6% MMRE and 100%
+    PRED(25%)], even in a real-world project (93.2% accuracy and 8.5% standard
+    deviation).
+
+[23] What Situational Information Would Help Developers When Using a Graphical Code
+    Recommender?
+
+[24] Clustering Navigation Sequences to Create Contexts for Guiding Code Navigation
+
+[25] A Study on Guiding Programmers' Code Navigation with a Graphical Code Recommender
+
+[26] A Framework for Tool-based Software Architecture Reconstruction
+
+    For software with nontrivial size and complexity, it is not feasible to manually
+    perform architecture reconstruction. Therefore it is essential for the software
+    architecture miner who is mining architecture from the existing software to have a
+    well-defined software architecture reconstruction process that helps incorporate as
+    much tool use as possible at the appropriate steps of architecture reconstruction.
+    There are some existing software architecture reconstruction frameworks but they do
+    not provide guidelines on how to systematically utilize tools to produce
+    architecture views for a reconstruction purpose. In this paper, we propose a
+    framework for tool-based software architecture reconstruction. This framework
+    consists of a generic process for software architecture reconstruction and the steps
+    to derive from it a concrete tool-based process to be used for actual architecture
+    reconstruction. The architecture miner can use this framework to analyze source code
+    for modifying source code as well as to reconstruct software architecture from
+    source code.
+
+[27] Transition Management of Software Process Improvement
+
+
+========================================================================================
+INTERNATIONAL CONFERENCES AND WORKSHOPS
+========================================================================================
+
+[1] AeroGuardian: From UAS Sighting Reports to Simulation-Validated Safety Intelligence
+
+[2] Dynamic Obstacle Collision Avoidance in Urban Manned-Unmanned Teaming: A Velocity
+    Obstacle and Control Barrier Function Approach
+
+[3] An Early-Warning System for Vision-Based Real-Time Collision Avoidance under Diverse
+    Conditions
+
+[4] Early Warning of Performance Degradation in Object Detection Models via Explainable
+    AI
+
+    In real-world deployment environments, visual degradations such as fog, motion blur,
+    and low/high illumination frequently occur, potentially leading to significant
+    performance degradation in object detection models. However, most existing studies
+    primarily focus on post-hoc performance evaluation metrics, such as mean Average
+    Precision (mAP), which only capture performance drops after they occur. In this
+    work, we investigate whether explainable AI-based internal indicators can provide
+    early warning signals of performance degradation in object detection models. To
+    analyze the behavior of an object detection model before degradation becomes
+    observable in mAP , we examine internal indicators at three levels—Input, Decision,
+    and Concept—under controlled visual corruptions. We compare how these indicators
+    respond as corruption severity increases and whether they change earlier than mAP.
+    The results show that some IDC indicators, particularly at the Input and Concept
+    levels, change before degradation becomes clearly observable in mAP .
+
+[5] Graph Database-based Measurement of Traceability Coverage in Open-Source Projects
+
+[6] Explainable AI for Issue Classification: A Multi-class Study with LIME and SHAP
+
+    Issue classification is a fundamental task in software development, enabling teams
+    to manage issue reports. Automatic issue classification can help developers classify
+    issue reports. However, developers should understand why each issue report is
+    classified in such a way. A prior study has shown that explainable AI (XAI) can
+    explain how an issue report is classified as a bug or a non-bug. However, the binary
+    setting limits applicability to real-world issue tracking systems, where multiple
+    categories coexist. In this paper, we replicate and extend the prior study by
+    conducting a multi-class issue classification experiment using three categories:
+    Bug, Enhancement, and Question. We use a fine-tuned, seBERT-based classifier and
+    apply two widely used XAI models, LIME and SHAP, to generate explanations for issue
+    classification. We then analyze the results of applying LIME and SHAP to multi-class
+    issue classification, both qualitatively and quantitatively.
+
+[7] Can LLMs Update API Documentation?
+
+    Human-written API documentation often becomes outdated, requiring developers to
+    update it manually. Researchers have proposed identifying outdated API name
+    references in documentation, yet have not addressed updating API documentation. Now,
+    emerging large language models (LLMs) are capable of generating code examples and
+    text descriptions. Then, a key question arises: Can LLMs assist in updating API
+    documentation? In this paper, we propose an approach for leveraging an LLM to update
+    API documentation with code change information. To evaluate this approach, we select
+    five open-source projects that manage documentation revisions on GitHub and analyze
+    the differences in documentation between two releases to derive ground truths. We
+    then assess the accuracy of LLM-generated updates by comparing them to the ground
+    truths. Our results show that LLM-generated updates achieve higher METEOR than
+    outdated API documentation (0.771 vs 0.679). It indicates that the LLM updates are
+    more similar to the human updates than the outdated documentation. Our results also
+    reveal that LLMs update code-related information in API documentation with a maximum
+    F1 score of$\mathbf{0. 9 2 1}$.
+
+[8] An Aviation Manned-Unmanned Teaming Simulation in Urban Environments to Compare
+    Autonomous Flight Formations
+
+    In response to the growing importance of urban drone operations and the strategic
+    potential of aviation mannedunmanned teaming (MUM-T), we propose a high-fidelity
+    simulation platform for MUM-T operations in urban environments. The platform
+    integrates Unreal Engine 5, Cesium for geospatial data, Colosseum (an AirSim fork),
+    and PX4 SITL to provide realistic flight dynamics, sensor modeling, and immersive
+    cityscapes. It supports the testing of MUM-T strategies in dense, obstacle-rich
+    urban settings with high physical and visual fidelity. To demonstrate its
+    capabilities, we simulated eight threequadrotor formation patterns: Column, Line
+    Abreast, Echelon, Vshape, Inverted-V, Triangle, Circular, and Arrow. Each formation
+    consisted of one human-operated leader and two autonomous followers. The results
+    revealed trade-offs between coverage, collision risk, and formation stability. Wider
+    formations improved coverage but caused more collisions, while compact ones enhanced
+    safety with reduced coverage. These findings highlight the platform's utility for
+    evaluating urban MUM-T strategies under realistic conditions.
+
+[9] An Integrated Metric for Modularity in a Microservice System
+
+    Microservices architectures offer significant advantages, including independent
+    deployment, scalability, and improved system flexibility. Nonetheless, as the number
+    of services increases, systems often experience diminished modularity, resulting in
+    architectural degradation. We propose a comprehensive modularity assessment
+    framework that systematically integrates three dimensions of modularity for a
+    microservice system: inter-service coupling, intra-service cohesion, and data
+    dependency. An integrated modularity score that aggregates these individual metrics
+    presents overall architectural modularity. We also evaluate the propose framework by
+    experimenting with seven JavaScript-based microservice systems. The evaluation
+    result demonstrates the framework's ability to identify modularity-related issues
+    and variations across services. The findings provide actionable insights to inform
+    architectural decision-making and promote more maintainable, scalable, and modular
+    microservice systems.
+
+[10] A Study on Applying Large Language Models to Issue Classification
+
+    Prompt-based large language models (LLMs) have demonstrated their ability to perform
+    tasks with minimal or no additional training data. In the context of issue
+    classification, researchers have actively explored the capabilities of LLMs in
+    classifying issue reports. However, existing studies still face limitations in
+    accuracy. This study replicates an LLM-based issue classification study using
+    GPT-3.5 Turbo and explores variants, such as adopting different models like
+    Llama$3.18 B$and GPT-4o. Experimental results show that the classifier fine-tuned
+    with GPT-3.5 Turbo still yields the same accuracy as shown in the original research
+    and that the classifier fine-tuned with Llama$3.18 B(0.8004)$yields an F1-score of
+    0.0535 lower than that of the classifier fine-tuned with GPT-3.5 Turbo (0.8467). On
+    the other hand, the classifier with GPT-4o (0.8639) yields an average$\mathbf{F
+    1}$-score$\mathbf{0. 0 1}$higher than that of the classifier fine-tuned with GPT-3.5
+    Turbo (0.8467). Additionally, the project-agnostic classifier fine-tuned with GPT-4o
+    yields the highest$\mathbf{F 1}$-score of$\mathbf{0. 8 6 8 0}$. These findings
+    contribute to advancing LLM-based issue classification by providing experimental
+    insights into the accuracy of LLMs in this issue classification task.
+
+[11] Automated code-based test case reuse for software product line testing
+
+[12] A Combination of Classification and Summarization Techniques for Bug Report
+    Summarization
+
+[13] Measuring Modularity in JavaScript-Based Microservices from Software Architectural
+    Perspectives
+
+[14] Duplicate Bug Report Detection by Using Sentence Embedding and Faiss
+
+[15] An Empirical Study on the Performance of Individual Issue Label Prediction
+
+    In GitHub, open-source software (OSS) developers label issue reports. As issue
+    labeling is a labor-intensive manual task, automatic approaches have developed to
+    label issue reports. However, those approaches have shown limited performance.
+    Therefore, it is necessary to analyze the performance of predicting labels for an
+    issue report. Understanding labels with high performance and those with low
+    performance can help improve the performance of automatic issue labeling tasks. In
+    this paper, we investigate the performance of individual label prediction. Our
+    investigation uncovers labels with high performance and those with low performance.
+    Our results can help researchers to understand the different characteristics of
+    labels and help developers to develop a unified approach that combines several
+    effective approaches for different kinds of issues.
+
+[16] Duplicate Bug Report Summarization
+
+[17] Java2Pseudo: Java to Pseudo Code Translator
+
+[18] A survey of collision avoidance systems for autonomous unmanned aerial vehicle
+
+[19] Issue report classification using multimodal deep learning
+
+[20] Classifying Issue into Custom Labels in GitBot
+
+    GitBots are bots in Git repositories to automate repetitive tasks that occur in
+    software development, testing and maintenance. GitBots are expected to perform the
+    repetitive tasks that are normally done by humans, such as feedback on issue reports
+    and answers to questions. However, studies on GitBots for labeling issue reports
+    fall short of replacing developers' labeling tasks. Developers still manually attach
+    labels to issues. In this paper, we introduce an issue labeling bot classifying
+    issue reports into custom labels that developers define by themselves so that our
+    bot could attach labels in a similar way to human behavior.
+
+[21] Bug Report Summarization using Believability Score and Text Ranking
+
+    During the maintenance phase of software development, bug reports provide software
+    developers with important information. However, bug reports often include complex
+    and long discussions. Therefore, concise and accurate summaries can help developers
+    save the time for reading the full contents of bug reports. Several researchers have
+    proposed summarizing bug reports. However, none of them proposed combining two
+    different scores for measuring how important each sentence is among the developers'
+    comments. In this paper, we propose an unsupervised bug report summarization which
+    combines believability score and text ranking score for measuring the degree to
+    which a sentence is important, in order to generate high-quality summaries. The
+    experimental results over a public dataset show that our method outperforms the
+    state-of-the-art method in terms of summary quality.
+
+[22] Automatic Detection and Update Suggestion for Outdated API Names in Documentation
+
+    Application programming interfaces (APIs) continually evolve to meet ever-changing
+    user needs, and documentation provides an authoritative reference for their usage.
+    However, API documentation is commonly outdated because nearly all of the associated
+    updates are performed manually. Such outdated documentation, especially with regard
+    to API names, causes major software development issues. In this paper, we propose a
+    method for automatically updating outdated API names in API documentation. Our
+    insight is that API updates in documentation can be derived from API implementation
+    changes between code revisions. To evaluate the proposed method, we applied it to
+    four open source projects. Our evaluation results show that our method, FreshDoc,
+    detects outdated API names in API documentation with 48 percent higher accuracy than
+    the existing state-of-the-art methods do. Moreover, when we checked the updates
+    suggested by FreshDoc against the developers' manual updates in the revised
+    documentation, FreshDoc detected 82 percent of the outdated names. When we reported
+    40 outdated API names found by FreshDoc via issue tracking systems, developers
+    accepted 75 percent of the suggestions. These evaluation results indicate that
+    FreshDoc can be used as a practical method for the detection and updating of API
+    names in the associated documentation.
+
+[23] Agile Requirement Traceability Matrix
+
+    Over the past 20 years, agile development methodology has been commonly adopted by
+    developers. One reason is that it flexibly responds to changes. In contrast, a
+    typical requirement traceability matrix is inflexible in incorporating changes. In
+    this paper, we propose Agile Requirement Traceability Matrix (ARTM). ARTM manages
+    traceability mappings between two artifacts and automatically generates the entire
+    requirement traceability matrix in spreadsheet. The case study, we also conducted,
+    shows that ARTM flexibly incorporates changes in the spirit of agile development.
+
+[24] Reconstruction of Execution Architecture View Using Dependency Relationships and
+    Execution Trace
+
+    Software1 architecture represents the structure of a software system. The execution
+    architecture view is an especially important architecture view as it can be
+    essential in designing and analyzing the execution structure of a system. Therefore,
+    researchers have proposed various methods of reconstructing an execution
+    architecture view for the systems but most of them rely on the existing
+    architectural knowledge of the target system such as hypothesized views, existing
+    documentations, or experts of the target system. However, when there are no
+    available documentations or experts, such methods cannot be used for reconstructing
+    the execution architecture view. In this paper, we propose a method that
+    reconstructs an execution architecture view in the absence of architectural
+    knowledge of the target system. In order to systematically bridge source code and
+    execution elements, our method utilizes the implementation mechanisms that are
+    identified from the dependency relationships between source code and the APIs of
+    standard and external libraries. Once implementation mechanisms are defined, finally
+    we can construct the execution view of the target system by extracting execution
+    components and connectors from the execution traces obtained through the
+    implementation mechanisms. To show the efficacy of the proposed method, a case study
+    is conducted.
+
+[25] Mining Contexts for Recommending Source Locations to Explore
+
+[26] A Graphical Recommender for Assisting Code Exploration
+
+    Recently, several graphical tools have been proposed to help developers avoid
+    becoming disoriented when working with large software projects. These tools
+    visualize the locations that developers have visited, allowing them to quickly
+    recall where they have already visited. However, developers also spend a significant
+    amount of time exploring source locations to visit, which is a task that is not
+    currently supported by existing tools. In this work, we propose a graphical code
+    recommender NavClus, which helps developers find relevant, unexplored source
+    locations to visit. NavClus operates by mining a developer's daily interaction
+    traces, comparing the developer's current working context with previously seen
+    contexts, and then predicting relevant source locations to visit. These locations
+    are displayed graphically along with the already explored locations in a class
+    diagram. As a result, with NavClus developers can quickly find, reach, and focus on
+    source locations relevant to their working contexts.
+    http://www.youtube.com/watch?v=rbrc5ERyWjQ.
+
+[27] Clustering and Recommending Collections of Code Relevant to Tasks
+
+    When performing software evolution tasks, programmers spend a significant amount of
+    time exploring the code base to find methods, fields or classes that are relevant to
+    the task at hand. We propose a new clustering approach called NavClus to recommend
+    collections of code relevant to tasks. By gradually aggregating navigation sequences
+    from programmers' interaction history, NavClus clusters pieces of code that are
+    contextually related. The resulting clusters become the basis for NavClus to
+    recommend collections of code that are likely to be relevant to the programmer's
+    given task. We compare NavClus and TeamTracks, the state of the art code recommender
+    for sharing navigation data among programmers. The results show that NavClus
+    recommends pieces of code relevant to tasks considerably better than TeamTracks.
+
+[28] How Can Diagramming Tools Help Support Programming Activities?
+
+    We report on an exploratory study we conducted to investigate what kind of
+    diagrammatic tool support, if any, is desired by programmers. The study involved 19
+    professional programmers working at three different companies. We found that the
+    study participants desire a wide range of information content in diagrams, which
+    would change depending upon the particular context of use. Meeting these needs may
+    require flexible, adaptive and responsive diagramming tool support.
+
+[29] Verifying a Software Architecture Reconstruction Framework with a Case Study
+
+    In this paper, we propose a framework for reconstructing software architecture from
+    a software system. The framework consists of the steps to reconstruct software
+    architecture for modifying source code. The framework can be used for developers to
+    analyze source code and reconstruct software architecture for modifying the code. In
+    addition, we perform a case study by analyzing Reflexion Model, an open source code,
+    to verify that the framework can be effectively applied to software architecture
+    reconstruction. For that, we evaluate several tools in order to select those that
+    support our reconstruction. Then we verify the framework and report several issues
+    discovered with the case study. By applying the issues encountered in the case study
+    to the framework, we have made our framework a more practical one that developers
+    can easily understand and adopt.
+
+[30] SAAT: Reverse Engineering for Performance Analysis
+
+    It is essential to understand both the static and dynamic aspects of existing
+    software for performance analysis. Software reverse engineering reestablishes the
+    structure and behavior of software and helps with that understanding. Researchers in
+    reverse engineering, however, have focused on identifying components and on static
+    relationships. Efforts on performance engineering are being made to represent
+    software behavior and simulate it. However, no one has tried to extract a simulated
+    model from existing software automatically. We introduce SAAT, a tool developed at
+    our research center. SAAT analyzes the dynamic aspects of software and creates a
+    simulated model for performance analysis. We explain how the model can be generated,
+    using a case study of UPnP middleware. This paper contributes to the bridge between
+    performance analysis and reverse engineering.
+
+[31] Developer's View on the Software Quality Model based on the ISO/IEC 9126
+
+
+========================================================================================
+DOMESTIC JOURNALS
+========================================================================================
+
+[1] Time Series Modeling for AI-based Forecasting of Chromium Plating Tank Concentration
+
+    The chromium plating process is subject to an environmental constraint: analysing
+    the CrO3 concentration in the bath takes a lead time of more than 24 hours. On site
+    this has meant dosing chemicals on the basis of an operator's experience, a leading
+    cause of process deviation and quality variation. To overcome that limitation, this
+    study introduces a weekly time-series forecasting model and proposes moving from the
+    existing intuitive approach to a data-driven, anticipatory decision-making scheme.
+    Concentration data accumulated from 2022 to 2024 was used as the training period,
+    and forecasting performance was evaluated against 26 weeks of measured data from the
+    first half of 2025. The experiments used the traditional models ARIMA, Holt-Winters
+    and Prophet together with the recent time-series foundation models TimesFM and
+    Chronos. ARIMA and Holt-Winters were the more accurate on Tank 3, whose trend is
+    stable, but TimesFM demonstrated the best forecasting performance and operational
+    stability on the more volatile Tank 5 and in the overall combined evaluation. In
+    particular, by quantitatively analysing the error characteristics near the
+    boundaries of the actual control specification (234-255 g/L), the study confirms
+    that the proposed forecasting technique can effectively supplement the judgement of
+    on-site operators and raise confidence in the process as a whole.  (tr.)
+
+[2] A Study on 3D Shape Recognition using Artificial Intelligence (II)
+
+    Interest in 3D shape recognition has grown with recent advances in artificial
+    intelligence. Aiming at automated shape recognition from CAD data in the manufacture
+    of aircraft parts, this study uses SsdNet, a model with excellent recognition
+    capability for deep-learning-based object detection, and analyses medium-to-large
+    materials of 3 m or more rather than the standard shapes of the earlier first study.
+    Recognition performance was optimised by applying pre-processing techniques such as
+    voxel conversion and overlapping segmentation. The experiments achieved an average
+    recognition accuracy of 83.3% over eight shapes, although the recognition rate fell
+    for complex shapes involving curved structures and overlap, confirming that further
+    research is needed to overcome these limitations. The study is expected to
+    contribute to improving the productivity of aircraft part machining through
+    automated shape recognition in NC (Numerical Control) programming in future smart
+    manufacturing environments.  (tr.)
+
+[3] A Case Study on the Practical Application of a Tailoring Methodology for the
+    Technical Process Group in ISO/IEC/IEEE 15288:2015
+
+[4] Safety Requirement Elicitation for Small Aircraft Collision Avoidance Software using
+    STPA, FTA and FMEA
+
+    With the recent trend toward urban air mobility, aircraft are becoming smaller and
+    turning into software-intensive systems. Safety analysis techniques and standards
+    centred on ARP4761, the aircraft safety assessment process, therefore need to change
+    so that they too centre on software. This paper links the STPA method with the FTA
+    and FMEA safety analysis techniques in order to analyse the safety of air mobility
+    as a software-intensive system. To establish how far STPA, FTA and FMEA can be
+    linked and to what effect, a safety analysis case study was carried out on collision
+    avoidance software for a small aircraft. Through the proposed method and the case
+    analysis, the paper confirms the effect of linking the STPA, FTA and FMEA safety
+    techniques and elicits safety requirements.  (tr.)
+
+[5] A Study on 3D Shape Recognition using Artificial Intelligence
+
+    For a long time, NC (Numerical Control) engineers have performed hundreds of similar
+    operations by hand for NC programming, working from the three-dimensional design
+    information produced by the design department, in order to machine parts on the
+    manufacturing line. This paper reports a first attempt at experimenting with object
+    detection technology that recognises the shapes of major aircraft parts. A
+    meaningful accuracy of 93% on average was obtained for seven of the nine shapes, and
+    after the tests the causes were investigated for the features that went
+    unrecognised. Finally, the study acquired the base knowledge needed for recognising
+    the shape of large bulkheads made up of aircraft structures. The results are
+    expected to be used in automating NC programming for the machining of aircraft
+    parts.  (tr.)
+
+[6] A Study on Mission Software Reliability Test Methods of International Joint
+    Development Project for KT-1 Military Aircraft Software
+
+[7] The Obstacle Size Prediction Method Based on YOLO and IR Sensor for Avoiding
+    Obstacle Collision of Small UAVs
+
+[8] Proposal of a Fail-Safe Requirement Analysis Procedure to Identify Critical Common
+    Causes an Aircraft System
+
+    The existing method of eliciting fail-safe design requirements for domestically
+    developed rotorcraft systems can, when applied to modern integrated avionics
+    systems, miss the factors by which the failure of a single item causes a critical
+    system function failure. The cause is that the fail-safe design targets are selected
+    on the basis of the effect a single item's failure has on system function. To
+    resolve this, the present study draws on the functional hazard assessment and
+    development assurance level allocation procedures of SAE ARP4754A, the international
+    standard for civil aircraft development, and presents a systematic analysis
+    procedure for eliciting fail-safe design requirements for a system architecture. To
+    confirm that the presented procedure resolves the problem described above, cross-
+    validation was performed by assuming a system architecture containing a single
+    factor capable of causing a critical function failure. As a result, critical common
+    causes that the existing method had missed could be identified, and fail-safe design
+    requirements for controlling them were shown to be elicited.  (tr.)
+
+[9] A Literature Review of Machine Learning Techniques for Establishing and Updating
+    Software Traceability  (tr.)
+
+[10] A Multi-label Classification Bot for Issue Management System in GitHub
+
+    The GitHub platform, which many developers use when developing open-source software,
+    provides an issue management system. Using it, those involved can report a problem
+    in the software or a functional request as an issue. GitHub's issue management
+    system lets developers freely create labels on issue reports so as to classify
+    issues. Because labelling is done by hand, however, it takes considerable effort and
+    inaccurate labelling can easily occur; and reading unlabelled issues one by one in
+    order to give feedback takes a great deal of time. Studies exist that attach a
+    single label in order to address these problems. In real issue reports, however,
+    there are a good number of issues that need several labels attached. This study
+    therefore proposes a multi-labelling bot that automatically attaches multiple
+    labels, so as to reduce the effort GitHub project managers spend reading issue
+    reports and giving feedback. The multi-label classification technique used in the
+    proposed bot showed an accuracy of 0.54 and an F1 score of 0.78.  (tr.)
+
+[11] Failure Analysis of Aircraft Software Test Cases from a Perspective of Requirements
+    Traceability
+
+[12] Reducing the Learning Time of Code Change Recommendation System Using Recurrent
+    Neural Network
+
+    A system that recommends the files a developer needs to change reduces the
+    developer's working time. Such recommendation systems, however, generally take a
+    long time to train on accumulated data, and they spend a great deal of time
+    retraining every time new data accumulates. This study proposes a method of reducing
+    training time in a code change recommendation system based on a recurrent neural
+    network (RNN-CRS) by avoiding unnecessary training when new data has accumulated and
+    the model has to be trained again. In an experimental evaluation across the five
+    products used in the experiment, the proposed method reduced the time taken to
+    regenerate the learning model after new data accumulated by 49.08%-68.15% compared
+    with previous work where the saving was large, and by 10.66% where it was small.
+    (tr.)
+
+[13] A Literature Survey of the Application of Word Embedding and Machine Learning
+    Techniques for User Feedback Classification
+
+[14] A Technique for Updating Method Calls by Utilizing Software Change Rules
+
+    To reduce the effort developers spend updating client software, previous studies
+    have presented techniques that derive change rules by analysing the differences
+    between release versions of a framework. Those studies, however, only generate
+    change rules; they do not update the client system itself. To go beyond that
+    limitation, this study presents a technique that automatically updates the method
+    calls present in a client by making use of the change rules generated by an existing
+    rule-generation tool. The technique was also implemented as a tool, and by
+    experimenting with the automatic updating of method calls the study evaluates how
+    well the extracted information was applied. In the evaluation, 279 of 547 method
+    calls were updated automatically, and only two compilation errors were observed.
+    This study contributes to research on reducing the effort client developers spend
+    updating method calls as a framework's methods change.  (tr.)
+
+[15] A Code Recommendation Method Using RNN Based on Interaction History
+
+[16] A Class Diagramming Tool for Visualizing the Latest Revision of Software Change
+    History
+
+    Research on software visualisation matters because it can help developers understand
+    a software system and carry out code changes. Recently presented bottom-up software
+    visualisation tools are demonstrating that they can help developers in their work,
+    with the advantage of showing only the code information the developer is actually
+    working on. These tools have the weakness, however, of showing only the code the
+    developer has explored. To assist code exploration by supplying related code
+    information in a bottom-up visualisation tool, this paper presents a tool that shows
+    the revision history of software as a class diagram. By showing the code information
+    developers have committed as a class diagram in a single click, the presented tool
+    helps developers understand code changes quickly. Through a case study, the paper
+    also shows that the tool can be useful when developers carry out continuous change
+    work over several days.  (tr.)
+
+[17] A Spreadsheet Application that Enables to Flexibly Change Mappings in Requirement
+    Traceability Matrix
+
+[18] Feedback-RFC Model to Individualize Heartbeat Standards
+
+    Many of the wearable smart fitness devices provide services related to users'
+    heartbeat rates. These services use fixed standards which have been pre-determined
+    based on statistical data. However, because body conditions significantly differ
+    between individuals, the services applying fixed standards to all individuals are
+    not reliable. This paper proposes the Feedback-RFC model which adapts heartbeat
+    standards to individual users' exercise abilities and also proposes a method to
+    implement the model. This paper also shows the effectiveness of the Feedback-RFC
+    model by collecting heartbeat data from 12 participants and evaluating the model
+    with the data.
+
+[19] Modeling Traceability between Software Product Line Requirements and Architecture
+
+    Traceability enables software developers to trace up the changes occurring in
+    software artifacts. In software product line, traceability is more complex than
+    traceability in a single product as commonality and variability should be
+    considered. Modeling traceability between features and requirements has been
+    proposed in the past. However, traceability between requirements and architecture
+    has more factors to consider, including many-to-many mappings and hierarchical
+    structure of architectures. This paper proposes a method of systematically
+    constructing platform traceability between platform requirements and platform
+    architecture. This paper also shows the efficacy of the proposed mechanism through
+    case studies.
+
+[20] Data-mining based Recommendation Systems for Software Evolution Tasks
+
+[21] Establishment of the Software Quality Metrics for a Software Development Process
+
+    In order to develop high quality software, software metrics have been made to assess
+    the quality of software, and recently, many object-oriented metrics have been
+    suggested for this purpose as well. However, research on the utilization of metrics
+    to control software quality in a development process has been inadequate. This is
+    due to the difficulty in assessing the significance of metrics in a software
+    development process from the perspective of overall software quality. In this paper,
+    we propose a method of applying metrics to a development process using the
+    Hierarchical Software Quality Model(H-SQM) which is defined in terms of the
+    products' special features. The method represents the H-SQM as the cause-and-effect
+    diagram and changes the diagram to the process-analysis diagram. And it applies
+    software quality metrics to each development stage by the process-analysis diagram.
+    In this way, we could utilize the software quality metrics efficiently in order to
+    improve the quality of software in the software development process.
+
+[22] Hierarchical Software Quality Model (H-SQM) of Developer's View
+
+
+========================================================================================
+DOMESTIC CONFERENCES
+========================================================================================
+
+[1] Reinforcement Learning for Multi-UAV Air Combat Combining Adversarial Co-Evolution
+    with Control Barrier Functions  (tr.)
+
+[2] Package Hallucination Detection and Classification
+
+[3] Exploring Failure Boundaries in Object Detection for Autonomous Flight Software
+    Using Counterfactual Explanations  (tr.)
+
+[4] HMI Design for Safety Alerts from Multiple Autonomous UAVs in LAH MUM-T
+    Reconnaissance and Detection Scenarios  (tr.)
+
+[5] An Explanation System Combining Grad-CAM and an LLM for Collision Risk Recognition
+    (tr.)
+
+[6] A RAG-MCP-Based Multi-Agent FreeCAD Auto-Coding System for Jig and Fixture Design
+    (tr.)
+
+[7] An Experimental Study on Compensating for the Structural Limitations of Large
+    Language Models through Project Structure Summarization  (tr.)
+
+[8] Applying LIME to Real-Time Drone Collision Risk Prediction  (tr.)
+
+[9] Development and Quantitative Evaluation of a Neo4j-Based Software Traceability Query
+    System  (tr.)
+
+[10] A Study on Using GPT-4o in Early Safety Analysis for Drone Collision Avoidance
+    (tr.)
+
+[11] A Study on Traceability Queries through Building a Traceability Database  (tr.)
+
+[12] A Study on Prompt Construction for Generating C++ Test Cases with an LLM  (tr.)
+
+[13] A Dynamic Obstacle Avoidance Method in 3D Environments Based on Fusing a Stereo
+    Camera with an Object Recognition Model  (tr.)
+
+[14] An Empirical Study on the Automatic Generation of Traceability in Open-Source
+    Projects  (tr.)
+
+[15] Implementing Duplicate Bug Report Detection Based on the Characteristics of GitHub
+    Issue Reports  (tr.)
+
+[16] A Fall Detection and Alarm System Using YOLOv5  (tr.)
+
+[17] Deriving Safety Requirements for Small Aircraft Collision Avoidance Software by
+    Combining STPA, FTA and FMEA  (tr.)
+
+[18] A Multimodal Deep Learning Model for Issue Report Classification  (tr.)
+
+[19] IoT Smart Farm Control Using an Android App and Google Firebase  (tr.)
+
+[20] Bug Report Summarization Using Pre-trained Models  (tr.)
+
+[21] Classifying Issue Reports According to Feature Descriptions in a User Manual Using
+    a BERT Model  (tr.)
+
+[22] A Multi-Label Classification Technique Using RoBERTa Fine-Tuning for GitHub Issue
+    Report Management and Its Performance Comparison  (tr.)
+
+[23] A Performance Comparison Between a KoBERT Chatbot and a Doc2Vec Chatbot for
+    Automatically Answering Course Questions  (tr.)
+
+[24] A System for Generating Two-Dimensional Maps Containing Target Information  (tr.)
+
+[25] Predicting the Number of Labels on an Issue Report  (tr.)
+
+[26] A Literature Review on Software Requirements Traceability  (tr.)
+
+[27] A Comparison of the Characteristics of 3D Simulators for Drone Operation
+    Experiments  (tr.)
+
+[28] A Natural Language Processing Chatbot Using the Doc2Vec Model for Automatically
+    Answering Course Questions  (tr.)
+
+[29] A Multi-Label Classification Bot for Issue Management  (tr.)
+
+[30] A Test Case Recommendation System for Mapping KAI Industrial Requirements Using TF-
+    IDF-Based Similarity Measurement  (tr.)
+
+[31] Reducing the Learning Time of Code Change Recommendation System Using Recurrent
+    Neural Network
+
+    A system that recommends the files a developer needs to change reduces the
+    developer's working time. Such recommendation systems, however, generally take a
+    long time to train on accumulated data, and they spend a great deal of time
+    retraining every time new data accumulates. This study proposes a method of reducing
+    training time in a code change recommendation system based on a recurrent neural
+    network (RNN-CRS) by avoiding unnecessary training when new data has accumulated and
+    the model has to be trained again. In an experimental evaluation across the five
+    products used in the experiment, the proposed method reduced the time taken to
+    regenerate the learning model after new data accumulated by 49.08%-68.15% compared
+    with previous work where the saving was large, and by 10.66% where it was small.
+    (tr.)
+
+[32] Comparison of Machine Learning Techniques for Traceability Establishment between
+    Issue Reports and User Manuals
+
+[33] Scenario-based Test Cases for the Verification of an Automatic Flight Control
+    Computer
+
+[34] Sign Language Translation Project based on AI and SE
+
+[35] A PageRank-based Bug Report Summarization Technique using Bug Report Relationships
+
+[36] Code Change Recommendation based on Recurrent Neural Networks
+
+[37] Summarization of Duplicated Issue Reports
+
+[38] Comparison of Pressure Sensors for Failure of Aircraft Propeller
+
+[39] Issue Classification using RNN
+
+[40] Prototyping for Development of Educational Autonomous Vehicle
+
+[41] Literature Survey on Fault Diagnosis
+
+[42] Analyzing Updates of Test Cases according to Code Changes
+
+[43] Identifying of the Software Evolution Phase Using Metrics
+
+[44] Code Change Recommendation System using Artificial Neural Network
+
+[45] Issue Classification according to Requirements
+
+[46] A Spreadsheet Application that Enables to Flexibly Change Mappings in Requirement
+    Traceability Matrix
+
+[47] Visualizing a Class Diagram from the Recent Revision of Software Change History
+
+[48] Literature Survey and Empirical Investigation on Mining API Changes
+
+[49] A Light-weight Requirement Traceability Matrix for Reflecting Traceability Mapping
+    Changes
+
+[50] Code Change Recommendation System based on the N-gram Model
+
+[51] Investigation on the Difficulties of Managing Traceability in the Evolution of
+    Software Requirements
+
+[52] A Refactoring Process for Improving the Portability of Embedded Software Modules
+
+[53] A Case Study on the Level of Code Quality according to File Ownership
+
+[54] Software Architecture Analysis for Performance Analysis: UPnP Case Study
+
+[55] The Case Study of Software Requirement Management
+
+[56] Incremental Process Deployment Strategy for Software Process Improvement

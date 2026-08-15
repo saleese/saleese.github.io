@@ -73,6 +73,18 @@ html[data-theme="dark"] {
   --navbar-bg-color: #2c2c2e;
   /* The light-mode gold is too dark to read against the dark page. */
   --pub-award-color: #d9b45f;
+
+  /* The gem's dark accent, #2698ba, sits at 5.09:1 against this background
+     while the body text around it is at 13.90:1 — links came out dimmer than
+     the prose they interrupt, and the theme sets them in weight 300 with no
+     underline, so colour is all they have. This is the same hue at 8.65:1,
+     close enough to the body text that a link now reads as emphasis.
+
+     Light mode keeps its purple: this value is 1.76:1 on the pale background,
+     effectively invisible, and the purple has the mirror problem in dark. The
+     two modes need different hues to each stay legible. */
+  --global-theme-color: #5cc9ca;
+  --global-hover-color: #5cc9ca;
 }
 
 .navbar {

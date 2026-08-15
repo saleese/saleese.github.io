@@ -163,8 +163,19 @@ latest_posts:
 
 <div class="ri-block" markdown="1">
 
+<!-- A plain <img> rather than figure.liquid: that include exists to generate
+     responsive raster variants, which an SVG neither needs nor can produce.
+     The cloud is built from the 138 publications and their abstracts, with each
+     word placed in the area whose papers use it disproportionately. -->
 <div class="ri-figure">
-  {% include figure.liquid loading="eager" path="assets/img/research_interests.png" class="img-fluid rounded" alt="Research interests: Software Engineering, Artificial Intelligence, and Drone Systems" %}
+  <a href="{{ '/assets/img/research_interests_wordcloud.svg' | relative_url }}">
+    <img
+      src="{{ '/assets/img/research_interests_wordcloud.svg' | relative_url }}"
+      class="img-fluid rounded"
+      loading="eager"
+      alt="Word cloud of the words used across these publications, grouped into Software Engineering, Artificial Intelligence and Drone Systems"
+    />
+  </a>
 </div>
 
 ## Research Interests

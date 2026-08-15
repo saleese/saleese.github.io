@@ -1,9 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="152 4 1296 1210" width="1296" height="1210" role="img" aria-label="Word cloud of publications grouped by research area">
-<rect x="152" y="4" width="1296" height="1210" fill="#ffffff"/>
-<g style="mix-blend-mode:multiply">
-<circle cx="560" cy="430" r="400" fill="#ffe1e6"/>
-<circle cx="1040" cy="430" r="400" fill="#cfebfd"/>
-<circle cx="800" cy="790" r="400" fill="#9999ff"/>
+<rect x="152" y="4" width="1296" height="1210" fill="#f6f6f6"/>
+<g>
+<circle cx="560" cy="430" r="400" fill="#ff9eb2" fill-opacity="0.62"/>
+<circle cx="1040" cy="430" r="400" fill="#7cc4f7" fill-opacity="0.62"/>
+<circle cx="800" cy="790" r="400" fill="#9999ff" fill-opacity="0.62"/>
+<defs>
+<clipPath id="clip-se"><circle cx="560" cy="430" r="400"/></clipPath>
+<clipPath id="clip-ai"><circle cx="1040" cy="430" r="400"/></clipPath>
+<clipPath id="clip-aero"><circle cx="800" cy="790" r="400"/></clipPath>
+</defs>
+<g clip-path="url(#clip-ai)">
+<circle cx="560" cy="430" r="400" fill="#c1ebdd" fill-opacity="0.62"/>
+</g>
+<g clip-path="url(#clip-aero)">
+<circle cx="560" cy="430" r="400" fill="#e099e0" fill-opacity="0.62"/>
+</g>
+<g clip-path="url(#clip-aero)">
+<circle cx="1040" cy="430" r="400" fill="#99bce0" fill-opacity="0.62"/>
+</g>
+<g clip-path="url(#clip-ai)">
+<g clip-path="url(#clip-aero)">
+<circle cx="560" cy="430" r="400" fill="#c1adc1" fill-opacity="0.62"/>
+</g></g>
 </g>
 <g font-family="Helvetica,Arial,sans-serif" font-weight="700">
 <text x="330.8" y="460.2" font-size="107.8" fill="#a81f3d">software<title>software — 125 occurrences, SE 83%</title></text>

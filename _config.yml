@@ -221,6 +221,7 @@ include: ["_pages"]
 exclude:
   - AGENTS.md
   - al-folio-upgrade-report.md
+  - assets/bin/
   - bin/
   - CLAUDE.md
   - Dockerfile

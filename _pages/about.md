@@ -182,8 +182,8 @@ latest_posts:
 
 My research interests are in **Software Engineering**, **Artificial Intelligence**, and **Drone Systems**.
 
-- **Software Engineering.** I am interested in software evolution. In this area, I am working on requirement traceability, software architecture, documentation updates, code recommendations, program comprehension, and agentic software engineering.
-- **Artificial Intelligence.** I am applying AI techniques such as LLMs, summarization, and classification techniques. I am also applying reinforcement learning techniques. I am interested in the trustworthiness of AI outcomes and AI agents.
+- **Software Engineering.** I am interested in software evolution. In this area, I am working on requirement traceability, software architecture, documentation updates, artifacts recommendations, and agentic software engineering.
+- **Artificial Intelligence.** I am interested in the trustworthiness of AI outcomes and AI agents. I am applying AI techniques such as LLMs, summarization, classification,  reinforcement learning, and harness engineering. 
 - **Drone Systems.** I am interested in autonomous drone flights. In this area, I am working on safety analysis techniques such as SACs, STPA, FTA, FMEA, etc.
 
 Overall, I am interested in **intelligent software engineering**. I am also interested in improving the productivity of software developers. However, the problem is entangled with the quality of software products. I want to develop the tools and data to improve the status quo. For that, I consider a contextual overview of a software system, using keywords: _task relevance_, _entry points_, and _design evolution_. For a practical application, I am working on drone systems.

@@ -1,11 +1,14 @@
 name: Update Google Scholar Citations
 
+# Scheduled runs are disabled: bin/update_scholar_citations.py times out against
+# Google Scholar from GitHub runners (exit 124), and _data/citations.yml is not
+# consumed by this site today -- the al_citations gem fetches counts at build time.
+# The script is kept in bin/; run this workflow manually if you need it.
 on:
-  schedule:
-    - cron: "0 0 * * 1" # Monday
-    - cron: "0 0 * * 3" # Wednesday
-    - cron: "0 0 * * 5" # Friday
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   update-citations:
@@ -93,6 +96,11 @@ jobs:
 
       - name: Commit and push if changed
         run: |
+          if [ ! -f _data/citations.yml ]; then
+            echo "⚠️ _data/citations.yml does not exist — the fetch step produced no data. Nothing to commit."
+            echo "⚠️ _data/citations.yml does not exist — nothing to commit." >> $GITHUB_STEP_SUMMARY
+            exit 0
+          fi
           git add _data/citations.yml
           git diff --staged --quiet || (
             echo "📤 Committing and pushing changes..."
